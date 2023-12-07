@@ -79,8 +79,8 @@ namespace RanorexWordpressLibrary
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://webtest.ranorex.org/wp-login.php' with browser 'chrome' in incognito and maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("https://webtest.ranorex.org/wp-login.php", "chrome", "", true, true, false, false, false, true, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://webtest.ranorex.org/wp-login.php' with browser 'Chrome' in incognito and maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("https://webtest.ranorex.org/wp-login.php", "Chrome", "", true, true, false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
         }

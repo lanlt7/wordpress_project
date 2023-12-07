@@ -27,7 +27,7 @@ mode="Desktop">
 	<recorditems>
 		<openwebsiterecorditem
 		args=""
-		browser="chrome"
+		browser="Chrome"
 		clearcache="False"
 		clearcodecache="False"
 		clearcookies="False"

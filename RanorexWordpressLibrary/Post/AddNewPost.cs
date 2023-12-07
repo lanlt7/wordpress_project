@@ -83,7 +83,10 @@ namespace RanorexWordpressLibrary.Post
             repo.ApplicationUnderTest.LeftSideBar.Posts.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.contextmenuAddNew' at Center.", repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.contextmenuAddNew' at Center.", repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo, new RecordItemIndex(2));
             repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNew.Click();
             Delay.Milliseconds(0);
             

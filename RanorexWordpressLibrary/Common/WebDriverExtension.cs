@@ -66,6 +66,19 @@ namespace RanorexWordpressLibrary.Common
     		var wait = new WebDriverWait(GetCurrentWebDriver(), timeout.TimeSpan);
     		wait.Until(ExpectedConditions.AlertIsPresent());
     	}
+    	
+    	
+    	/// <summary>
+    	/// This is a placeholder text. Please describe the purpose of the
+    	/// user code method here. The method is published to the user code library
+    	/// within a user code collection.
+    	/// </summary>
+    	[UserCodeMethod]
+    	public static void WaitForPageLoadComplete()
+    	{
+    		
+    	}
+    	
         // You can use the "Insert New User Code Method" functionality from the context menu,
         // to add a new method with the attribute [UserCodeMethod].
     }
