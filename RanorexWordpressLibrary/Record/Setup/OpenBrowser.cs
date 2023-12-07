@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary
+namespace RanorexWordpressLibrary.Record.Setup
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace RanorexWordpressLibrary
     public partial class OpenBrowser : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RanorexWordpressLibraryRepository repository.
+        /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
-        public static RanorexWordpressLibraryRepository repo = RanorexWordpressLibraryRepository.Instance;
+        public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
         static OpenBrowser instance = new OpenBrowser();
 

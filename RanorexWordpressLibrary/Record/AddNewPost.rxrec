@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="AddNewPost"
-	namespace="RanorexWordpressLibrary.Post">
+	namespace="RanorexWordpressLibrary.Record">
 	</codegen>
 	<variables>
 	</variables>

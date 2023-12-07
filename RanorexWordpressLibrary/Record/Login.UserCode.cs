@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RanorexWordpressLibrary
+namespace RanorexWordpressLibrary.Record
 {
     public partial class Login
     {

@@ -26,6 +26,12 @@
 			id="2ae354f0-c589-4a03-8831-f809d6af5af9"
 			name="setup">
 			</setup>
+			<testmodule
+			id="5012807e-f3e9-4201-a3d0-9fd7755a04aa"
+			name="add"
+			ref="fade24ea-6ff0-4314-9948-f0ea2db40698"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="6e5b2e12-2add-44f6-977a-6af23fd27e41"
 			name="teardown">
@@ -48,15 +54,10 @@
 			reportlevel="Info;20">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="a98c7752-a231-4cde-9b11-64d38edf951d"
 			name="CloseBrowser"
 			ref="4066f950-2221-402d-b807-7668fe4d404e"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="bcacf549-32b4-4b80-9912-f3bcae3fa11f"
-			name="AddNewPost"
-			ref="7ccce584-6f4f-44f1-9597-2de6693bfe0c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -134,8 +135,8 @@
 						name="Login">
 						</testmodule>
 						<testmodule
-						id="bcacf549-32b4-4b80-9912-f3bcae3fa11f"
-						name="AddNewPost">
+						id="5012807e-f3e9-4201-a3d0-9fd7755a04aa"
+						name="add">
 						</testmodule>
 						<teardown
 						id="6e5b2e12-2add-44f6-977a-6af23fd27e41"

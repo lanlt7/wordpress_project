@@ -75,11 +75,10 @@ name="RanorexWordpressLibraryRepository">
 				capname="atag"
 				id="fa819b3f-baff-42d9-a1c4-b5f68a6bb379"
 				name="contextmenuAddNew"
-				refimgid="6aea43a7-9e0b-4903-a7de-9da75bb38051"
-				refpath="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']/ul/li[3]/a[@innertext='Add New']"
+				refimgid="0ee9ebe6-c3a2-46cf-917b-ef2e68375471"
 				robustPath="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='Add New']"
 				searchtimeout="30000ms">
-					/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='Add New']
+					/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//li[@class='wp-first-item current']/..//a[@innertext='Add New']
 				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']
@@ -101,6 +100,39 @@ name="RanorexWordpressLibraryRepository">
 				robustPath="/dom[@domain='webtest.ranorex.org']//div[#'wpbody-content']/?/?/h2[@innertext='Add New Post']"
 				searchtimeout="30000ms">
 					/dom[@domain='webtest.ranorex.org']//div[#'wpbody-content']//h2[@innertext='Add New Post']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="a6e53366-8522-4528-9cb5-c22e731fec0c"
+				name="txtTitle"
+				refimgid="f0c141b1-4fdc-4d18-97f0-c5eb7cf3ed0f"
+				refpath="/dom[@domain='webtest.ranorex.org']//input[#'title']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//input[#'title']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//input[#'title']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="68aa9aa8-f921-4dad-906c-c52e8131441c"
+				name="txtContent"
+				refimgid="3f4e2c7a-c64f-43ca-ada5-b789d295ccee"
+				refpath="/dom[@domain='webtest.ranorex.org']//textarea[#'content']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//textarea[#'content']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//textarea[#'content']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="461d1826-e1c9-41e2-b2bc-6af888f26c21"
+				name="btnPublish"
+				refimgid="72b9486a-3682-4bfe-b663-58bb23d7969f"
+				refpath="/dom[@domain='webtest.ranorex.org']//input[#'publish']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//input[#'publish']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//input[#'publish']
 				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']

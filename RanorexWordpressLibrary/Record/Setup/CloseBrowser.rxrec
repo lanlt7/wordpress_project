@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="5378a50d-e133-44d3-ab37-fb6b73e389e9"
+id="4066f950-2221-402d-b807-7668fe4d404e"
 mode="Desktop">
 	<repeatcount>
 		1
@@ -19,38 +19,37 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="OpenBrowser"
-	namespace="RanorexWordpressLibrary">
+	classname="CloseBrowser"
+	namespace="RanorexWordpressLibrary.Record.Setup">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="Chrome"
-		clearcache="False"
-		clearcodecache="False"
-		clearcookies="False"
-		clearserviceworker="False"
+		<closeapprecorditem
 		enabled="True"
-		incognito="True"
-		instrument="True"
-		killexisting="True"
-		maximized="True"
-		optional="False">
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="f0527be7-14f0-4491-8b9f-a50793cd27e2">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<url>
-				https://webtest.ranorex.org/wp-login.php
-			</url>
-		</openwebsiterecorditem>
+			<info
+			id="8ca35afe-5cc1-48cc-9960-5dfc3a45bd5e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
 	name="RanorexWordpressLibraryRepository"
-	relativepath="RanorexWordpressLibraryRepository.rxrep">
+	relativepath="..\..\RanorexWordpressLibraryRepository.rxrep">
 		<codegen
 		classname="RanorexWordpressLibraryRepository"
 		namespace="RanorexWordpressLibrary">
@@ -62,7 +61,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		OpenBrowser.UserCode.cs
+		CloseBrowser.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

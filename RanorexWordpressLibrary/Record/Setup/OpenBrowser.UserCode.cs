@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RanorexWordpressLibrary.Post
+namespace RanorexWordpressLibrary.Record.Setup
 {
-    public partial class AddNewPost
+    public partial class OpenBrowser
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

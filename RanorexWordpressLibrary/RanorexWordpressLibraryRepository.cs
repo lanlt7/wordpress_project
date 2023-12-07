@@ -235,7 +235,7 @@ namespace RanorexWordpressLibrary
                     base("LeftSideBar", "", parentFolder, 30000, null, false, "5d447b3f-3e38-41b5-b117-cb19f82e1703", "")
             {
                 _postsInfo = new RepoItemInfo(this, "Posts", ".//li[#'menu-posts']//div[@innertext='Posts']", ".//li[#'menu-posts']/?/?/div[@innertext='Posts']", 30000, null, "755005be-9dec-4c99-9e90-134ace2f8ee0");
-                _contextmenuaddnewInfo = new RepoItemInfo(this, "contextmenuAddNew", ".//li[#'menu-posts']//a[@innertext='Add New']", ".//li[#'menu-posts']//a[@innertext='Add New']", 30000, null, "fa819b3f-baff-42d9-a1c4-b5f68a6bb379");
+                _contextmenuaddnewInfo = new RepoItemInfo(this, "contextmenuAddNew", ".//li[#'menu-posts']//li[@class='wp-first-item current']/..//a[@innertext='Add New']", ".//li[#'menu-posts']//a[@innertext='Add New']", 30000, null, "fa819b3f-baff-42d9-a1c4-b5f68a6bb379");
             }
 
             /// <summary>
@@ -318,6 +318,9 @@ namespace RanorexWordpressLibrary
         public partial class PostFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titleaddnewpostInfo;
+            RepoItemInfo _txttitleInfo;
+            RepoItemInfo _txtcontentInfo;
+            RepoItemInfo _btnpublishInfo;
 
             /// <summary>
             /// Creates a new Post  folder.
@@ -326,6 +329,9 @@ namespace RanorexWordpressLibrary
                     base("Post", "", parentFolder, 30000, null, false, "c72343c8-af1a-46aa-b739-23d896fd328c", "")
             {
                 _titleaddnewpostInfo = new RepoItemInfo(this, "titleAddNewPost", ".//div[#'wpbody-content']//h2[@innertext='Add New Post']", ".//div[#'wpbody-content']/?/?/h2[@innertext='Add New Post']", 30000, null, "4965f802-de8b-42b0-b38a-073c4da64aab");
+                _txttitleInfo = new RepoItemInfo(this, "txtTitle", ".//input[#'title']", ".//input[#'title']", 30000, null, "a6e53366-8522-4528-9cb5-c22e731fec0c");
+                _txtcontentInfo = new RepoItemInfo(this, "txtContent", ".//textarea[#'content']", ".//textarea[#'content']", 30000, null, "68aa9aa8-f921-4dad-906c-c52e8131441c");
+                _btnpublishInfo = new RepoItemInfo(this, "btnPublish", ".//input[#'publish']", ".//input[#'publish']", 30000, null, "461d1826-e1c9-41e2-b2bc-6af888f26c21");
             }
 
             /// <summary>
@@ -373,6 +379,78 @@ namespace RanorexWordpressLibrary
                 get
                 {
                     return _titleaddnewpostInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtTitle item.
+            /// </summary>
+            [RepositoryItem("a6e53366-8522-4528-9cb5-c22e731fec0c")]
+            public virtual Ranorex.InputTag txtTitle
+            {
+                get
+                {
+                    return _txttitleInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("a6e53366-8522-4528-9cb5-c22e731fec0c")]
+            public virtual RepoItemInfo txtTitleInfo
+            {
+                get
+                {
+                    return _txttitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtContent item.
+            /// </summary>
+            [RepositoryItem("68aa9aa8-f921-4dad-906c-c52e8131441c")]
+            public virtual Ranorex.TextAreaTag txtContent
+            {
+                get
+                {
+                    return _txtcontentInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtContent item info.
+            /// </summary>
+            [RepositoryItemInfo("68aa9aa8-f921-4dad-906c-c52e8131441c")]
+            public virtual RepoItemInfo txtContentInfo
+            {
+                get
+                {
+                    return _txtcontentInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnPublish item.
+            /// </summary>
+            [RepositoryItem("461d1826-e1c9-41e2-b2bc-6af888f26c21")]
+            public virtual Ranorex.InputTag btnPublish
+            {
+                get
+                {
+                    return _btnpublishInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnPublish item info.
+            /// </summary>
+            [RepositoryItemInfo("461d1826-e1c9-41e2-b2bc-6af888f26c21")]
+            public virtual RepoItemInfo btnPublishInfo
+            {
+                get
+                {
+                    return _btnpublishInfo;
                 }
             }
         }

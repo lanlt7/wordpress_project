@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary
+namespace RanorexWordpressLibrary.Record
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace RanorexWordpressLibrary
     public partial class Login : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RanorexWordpressLibraryRepository repository.
+        /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
-        public static RanorexWordpressLibraryRepository repo = RanorexWordpressLibraryRepository.Instance;
+        public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
         static Login instance = new Login();
 
@@ -105,10 +105,10 @@ namespace RanorexWordpressLibrary
 
             Init();
 
-            Common.CommonTextbox.InputText(repo.ApplicationUnderTest.UserLoginInfo, varUsername);
+            Common.Textbox.InputText(repo.ApplicationUnderTest.UserLoginInfo, varUsername);
             Delay.Milliseconds(0);
             
-            Common.CommonTextbox.InputText(repo.ApplicationUnderTest.UserPassInfo, varPassword);
+            Common.Textbox.InputText(repo.ApplicationUnderTest.UserPassInfo, varPassword);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.WpSubmit' at 31;15.", repo.ApplicationUnderTest.WpSubmitInfo, new RecordItemIndex(2));

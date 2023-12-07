@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Login"
-	namespace="RanorexWordpressLibrary">
+	namespace="RanorexWordpressLibrary.Record">
 	</codegen>
 	<variables>
 		<var
@@ -34,7 +34,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CommonTextbox"
+		classname="Textbox"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="InputText"
@@ -77,7 +77,7 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="CommonTextbox"
+		classname="Textbox"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="InputText"
@@ -251,7 +251,6 @@ mode="Global">
 					/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']
 				</path>
 				<robustPath>
-					/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']
 				</robustPath>
 			</info>
 			<helperscreenshot
@@ -370,7 +369,7 @@ UbRS0UAJtFG0UtFACbRSgYoooAKKKKAP/9k=
 	<repository
 	id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
 	name="RanorexWordpressLibraryRepository"
-	relativepath="RanorexWordpressLibraryRepository.rxrep">
+	relativepath="..\RanorexWordpressLibraryRepository.rxrep">
 		<codegen
 		classname="RanorexWordpressLibraryRepository"
 		namespace="RanorexWordpressLibrary">

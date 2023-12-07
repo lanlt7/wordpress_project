@@ -29,7 +29,7 @@ namespace RanorexWordpressLibrary.Common
 	/// Creates a Ranorex user code collection. A collection is used to publish user code methods to the user code library.
 	/// </summary>
 	[UserCodeCollection]
-	public class CommonTextbox
+	public class Textbox
 	{
 		// You can use the "Insert New User Code Method" functionality from the context menu,
 		// to add a new method with the attribute [UserCodeMethod].

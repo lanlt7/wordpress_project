@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary.Post
+namespace RanorexWordpressLibrary.Record
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AddNewPost recording.
+    ///The add recording.
     /// </summary>
-    [TestModule("7ccce584-6f4f-44f1-9597-2de6693bfe0c", ModuleType.Recording, 1)]
-    public partial class AddNewPost : ITestModule
+    [TestModule("fade24ea-6ff0-4314-9948-f0ea2db40698", ModuleType.Recording, 1)]
+    public partial class add : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
         public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static AddNewPost instance = new AddNewPost();
+        static add instance = new add();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AddNewPost()
+        public add()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AddNewPost Instance
+        public static add Instance
         {
             get { return instance; }
         }
@@ -79,15 +79,19 @@ namespace RanorexWordpressLibrary.Post
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.Posts' at Center.", repo.ApplicationUnderTest.LeftSideBar.PostsInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.LeftSideBar.Posts.Click();
+            Common.MouseClick.Mouse_Click_Left_Side_Menu(repo.ApplicationUnderTest.LeftSideBar.PostsInfo, repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.txtTitle' at 407;19.", repo.ApplicationUnderTest.Post.txtTitleInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Post.txtTitle.Click("407;19");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.contextmenuAddNew' at Center.", repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNew.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.txtContent' at 413;96.", repo.ApplicationUnderTest.Post.txtContentInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.Post.txtContent.Click("413;96");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.btnPublish' at 33;21.", repo.ApplicationUnderTest.Post.btnPublishInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.Post.btnPublish.Click("33;21");
             Delay.Milliseconds(0);
             
         }

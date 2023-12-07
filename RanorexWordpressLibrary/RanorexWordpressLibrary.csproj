@@ -126,59 +126,14 @@
     <Compile Include="AssemblyInfo.cs">
       <id>a42464cb-fb0a-48a2-9ea1-34b83c7b6097</id>
     </Compile>
-    <Compile Include="CloseBrowser.cs">
-      <BoundTo>5ad89efa-6591-4805-9936-934294ff39ff</BoundTo>
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>76fb8416-c551-4996-8b4f-8ee06f0ef6ab</id>
+    <Compile Include="Common\Textbox\MouseClick.cs">
+      <id>fe3cf6b7-bc06-4436-bda8-9b8269afea33</id>
     </Compile>
-    <Compile Include="CloseBrowser.UserCode.cs">
-      <BoundTo>5ad89efa-6591-4805-9936-934294ff39ff</BoundTo>
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>2ec211e9-2fd2-4cd4-824d-b097decc7921</id>
-    </Compile>
-    <Compile Include="Common\Textbox\CommonTextbox.cs">
-      <id>bc0c1b9f-25a0-499d-bd78-1f17a71c99ac</id>
+    <Compile Include="Common\Textbox\Textbox.cs">
+      <id>3d5230f6-0ccf-4db7-abff-45d1d89f11df</id>
     </Compile>
     <Compile Include="Common\WebDriverExtension.cs">
       <id>3a9f945f-c563-46c0-ae6e-6eba8d3bfb70</id>
-    </Compile>
-    <Compile Include="Login.cs">
-      <BoundTo>ceff3c19-a6a1-428e-98f6-ed4c167b4401</BoundTo>
-      <DependentUpon>Login.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7bd0e782-cdde-4d5c-b4b1-38693979e0cb</id>
-    </Compile>
-    <Compile Include="Login.UserCode.cs">
-      <BoundTo>ceff3c19-a6a1-428e-98f6-ed4c167b4401</BoundTo>
-      <DependentUpon>Login.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>76cdb5db-3824-45f8-9a77-b50036dfbd81</id>
-    </Compile>
-    <Compile Include="OpenBrowser.cs">
-      <BoundTo>f26c9b22-a274-4dff-a931-3592c6e3e408</BoundTo>
-      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b2d7b337-0bec-40e5-a972-cecc67cc03d3</id>
-    </Compile>
-    <Compile Include="OpenBrowser.UserCode.cs">
-      <BoundTo>f26c9b22-a274-4dff-a931-3592c6e3e408</BoundTo>
-      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>678b1b8e-0802-4e57-846b-828c1a378ffa</id>
-    </Compile>
-    <Compile Include="Post\AddNewPost.cs">
-      <DependentUpon>AddNewPost.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>8faca9cb-95fe-461f-b599-3c4e15ebea53</id>
-      <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
-    </Compile>
-    <Compile Include="Post\AddNewPost.UserCode.cs">
-      <DependentUpon>AddNewPost.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>a9b56ebc-b653-4fdd-887a-690936d01b8b</id>
-      <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
     </Compile>
     <Compile Include="Program.cs">
       <id>45af0839-2493-4e69-891d-2a874de08f91</id>
@@ -189,30 +144,70 @@
       <RepositoryCode>true</RepositoryCode>
       <id>bab93f34-ba91-425d-b1da-0ecf2bc24711</id>
     </Compile>
+    <Compile Include="Record\add.cs">
+      <BoundTo>9e1d41ab-6615-4396-ab67-651d7287bbd6</BoundTo>
+      <DependentUpon>add.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e4ece1e4-c7db-4835-93b6-1e70d6178e90</id>
+    </Compile>
+    <Compile Include="Record\add.UserCode.cs">
+      <BoundTo>9e1d41ab-6615-4396-ab67-651d7287bbd6</BoundTo>
+      <DependentUpon>add.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>472ae750-719d-4c49-9cd7-3fe50f841ec5</id>
+    </Compile>
+    <Compile Include="Record\AddNewPost.cs">
+      <DependentUpon>AddNewPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8faca9cb-95fe-461f-b599-3c4e15ebea53</id>
+      <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
+    </Compile>
+    <Compile Include="Record\AddNewPost.UserCode.cs">
+      <DependentUpon>AddNewPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9b56ebc-b653-4fdd-887a-690936d01b8b</id>
+      <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
+    </Compile>
+    <Compile Include="Record\Login.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7bd0e782-cdde-4d5c-b4b1-38693979e0cb</id>
+      <BoundTo>ceff3c19-a6a1-428e-98f6-ed4c167b4401</BoundTo>
+    </Compile>
+    <Compile Include="Record\Login.UserCode.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76cdb5db-3824-45f8-9a77-b50036dfbd81</id>
+      <BoundTo>ceff3c19-a6a1-428e-98f6-ed4c167b4401</BoundTo>
+    </Compile>
+    <Compile Include="Record\Setup\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>76fb8416-c551-4996-8b4f-8ee06f0ef6ab</id>
+      <BoundTo>5ad89efa-6591-4805-9936-934294ff39ff</BoundTo>
+    </Compile>
+    <Compile Include="Record\Setup\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ec211e9-2fd2-4cd4-824d-b097decc7921</id>
+      <BoundTo>5ad89efa-6591-4805-9936-934294ff39ff</BoundTo>
+    </Compile>
+    <Compile Include="Record\Setup\OpenBrowser.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2d7b337-0bec-40e5-a972-cecc67cc03d3</id>
+      <BoundTo>f26c9b22-a274-4dff-a931-3592c6e3e408</BoundTo>
+    </Compile>
+    <Compile Include="Record\Setup\OpenBrowser.UserCode.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>678b1b8e-0802-4e57-846b-828c1a378ffa</id>
+      <BoundTo>f26c9b22-a274-4dff-a931-3592c6e3e408</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <id>51657543-159a-4f47-ac23-d2b27a5a45d4</id>
-    </None>
-    <None Include="CloseBrowser.rxrec">
-      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
-      <id>5ad89efa-6591-4805-9936-934294ff39ff</id>
-      <recordtableid>4066f950-2221-402d-b807-7668fe4d404e</recordtableid>
-    </None>
-    <None Include="Login.rxrec">
-      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
-      <id>ceff3c19-a6a1-428e-98f6-ed4c167b4401</id>
-      <recordtableid>cdac8c09-9e4c-4eb3-8cb4-48e5b74e64c9</recordtableid>
-    </None>
-    <None Include="OpenBrowser.rxrec">
-      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
-      <id>f26c9b22-a274-4dff-a931-3592c6e3e408</id>
-      <recordtableid>5378a50d-e133-44d3-ab37-fb6b73e389e9</recordtableid>
-    </None>
-    <None Include="Post\AddNewPost.rxrec">
-      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
-      <id>de823c6d-c0de-48c1-8a61-9a611846e097</id>
-      <recordtableid>7ccce584-6f4f-44f1-9597-2de6693bfe0c</recordtableid>
     </None>
     <None Include="RanorexWordpressLibraryRepository.rximg">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
@@ -224,6 +219,31 @@
       <id>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</id>
       <repoid>7d26d7be-3b31-4650-a6f7-74688f90bd34</repoid>
       <reporootid>78cdb3e0-f1ee-4349-aaba-d9e99da4313e</reporootid>
+    </None>
+    <None Include="Record\add.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>9e1d41ab-6615-4396-ab67-651d7287bbd6</id>
+      <recordtableid>fade24ea-6ff0-4314-9948-f0ea2db40698</recordtableid>
+    </None>
+    <None Include="Record\AddNewPost.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>de823c6d-c0de-48c1-8a61-9a611846e097</id>
+      <recordtableid>7ccce584-6f4f-44f1-9597-2de6693bfe0c</recordtableid>
+    </None>
+    <None Include="Record\Login.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>ceff3c19-a6a1-428e-98f6-ed4c167b4401</id>
+      <recordtableid>cdac8c09-9e4c-4eb3-8cb4-48e5b74e64c9</recordtableid>
+    </None>
+    <None Include="Record\Setup\CloseBrowser.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>5ad89efa-6591-4805-9936-934294ff39ff</id>
+      <recordtableid>4066f950-2221-402d-b807-7668fe4d404e</recordtableid>
+    </None>
+    <None Include="Record\Setup\OpenBrowser.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>f26c9b22-a274-4dff-a931-3592c6e3e408</id>
+      <recordtableid>5378a50d-e133-44d3-ab37-fb6b73e389e9</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -243,8 +263,11 @@
     <Folder Include="Common\Textbox">
       <id>64104eb7-2980-4d0c-be34-1631ee4e0648</id>
     </Folder>
-    <Folder Include="Post">
-      <id>1e16fda9-f7a6-42b1-b129-9bd54e69f6c5</id>
+    <Folder Include="Record">
+      <id>5128fae4-d91e-4425-ad99-dd8d4814c9cf</id>
+    </Folder>
+    <Folder Include="Record\Setup">
+      <id>cdf21c32-4356-477a-9c5d-b72aae9ef8e1</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

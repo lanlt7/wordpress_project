@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary
+namespace RanorexWordpressLibrary.Record
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseBrowser recording.
+    ///The AddNewPost recording.
     /// </summary>
-    [TestModule("4066f950-2221-402d-b807-7668fe4d404e", ModuleType.Recording, 1)]
-    public partial class CloseBrowser : ITestModule
+    [TestModule("7ccce584-6f4f-44f1-9597-2de6693bfe0c", ModuleType.Recording, 1)]
+    public partial class AddNewPost : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RanorexWordpressLibraryRepository repository.
+        /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
-        public static RanorexWordpressLibraryRepository repo = RanorexWordpressLibraryRepository.Instance;
+        public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static CloseBrowser instance = new CloseBrowser();
+        static AddNewPost instance = new AddNewPost();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseBrowser()
+        public AddNewPost()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseBrowser Instance
+        public static AddNewPost Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,15 @@ namespace RanorexWordpressLibrary
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.ApplicationUnderTest.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.Posts' at Center.", repo.ApplicationUnderTest.LeftSideBar.PostsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.LeftSideBar.Posts.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.contextmenuAddNew' at Center.", repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNew.Click();
             Delay.Milliseconds(0);
             
         }
