@@ -1,15 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modulegroupdoc>
-  <testsuiteentryhierarchy>
-    <flatlistofchildren>
-      <modulegroups
-      name="Sample"
-      id="37945c8f-dcc9-4589-9c41-0adf2ce0f42a"/>
-    </flatlistofchildren>
-    <childhierarchy>
-      <modulegroups
-      name="Sample"
-      id="37945c8f-dcc9-4589-9c41-0adf2ce0f42a"/>
-    </childhierarchy>
-  </testsuiteentryhierarchy>
+<modulegroupdoc
+rxversion="10.7">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<testmodule
+			id="0f467321-230a-4499-afe8-38a5882fd13d"
+			name="Recording2"
+			ref="60c6607c-c7bf-4997-a4c9-3323b78817d9"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1d39fdac-24d6-40cc-94b8-193b011cecfe"
+			name="Recording1"
+			ref="755e0029-3933-4a55-b0d3-c7ab2b952264"
+			type="Recording">
+			</testmodule>
+			<modulegroups
+			id="37945c8f-dcc9-4589-9c41-0adf2ce0f42a"
+			name="Sample">
+			</modulegroups>
+			<modulegroupdef
+			id="bda76a6d-1a3b-4875-a158-abac40ef0de5"
+			name="ModuleGroup">
+			</modulegroupdef>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="37945c8f-dcc9-4589-9c41-0adf2ce0f42a"
+			name="Sample">
+				<modulegroupdef
+				id="bda76a6d-1a3b-4875-a158-abac40ef0de5"
+				name="ModuleGroup">
+					<testmodule
+					id="1d39fdac-24d6-40cc-94b8-193b011cecfe"
+					name="Recording1">
+					</testmodule>
+					<testmodule
+					id="0f467321-230a-4499-afe8-38a5882fd13d"
+					name="Recording2">
+					</testmodule>
+				</modulegroupdef>
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
 </modulegroupdoc>

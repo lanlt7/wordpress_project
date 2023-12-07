@@ -1,15 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modulegroupdoc>
-  <testsuiteentryhierarchy>
-    <flatlistofchildren>
-      <modulegroups
-      name="RanorexWordpressLibrary"
-      id="eca917cd-90bc-40f2-a6c0-ba6ae7ca8f74"/>
-    </flatlistofchildren>
-    <childhierarchy>
-      <modulegroups
-      name="RanorexWordpressLibrary"
-      id="eca917cd-90bc-40f2-a6c0-ba6ae7ca8f74"/>
-    </childhierarchy>
-  </testsuiteentryhierarchy>
+<modulegroupdoc
+rxversion="10.7">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroupdef
+			id="7c6148c7-a01f-4f74-90e3-168a6932e1fd"
+			name="ModuleGroup">
+			</modulegroupdef>
+			<modulegroups
+			id="eca917cd-90bc-40f2-a6c0-ba6ae7ca8f74"
+			name="RanorexWordpressLibrary">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="eca917cd-90bc-40f2-a6c0-ba6ae7ca8f74"
+			name="RanorexWordpressLibrary">
+				<modulegroupdef
+				id="7c6148c7-a01f-4f74-90e3-168a6932e1fd"
+				name="ModuleGroup">
+				</modulegroupdef>
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
 </modulegroupdoc>

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RanorexWordpressLibrary.Record
+namespace RanorexWordpressLibrary.Record.Post
 {
-    public partial class add
+    public partial class FillPost
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,12 +31,6 @@ namespace RanorexWordpressLibrary.Record
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void Mouse_Click_txtContent(RepoItemInfo textareatagInfo)
-        {
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'textareatagInfo' at 407;77.", textareatagInfo);
-            textareatagInfo.FindAdapter<TextAreaTag>().Click("407;77");
         }
 
     }

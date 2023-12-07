@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary.Record
+namespace RanorexWordpressLibrary.Record.Post
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The add recording.
+    ///The FillPost recording.
     /// </summary>
-    [TestModule("fade24ea-6ff0-4314-9948-f0ea2db40698", ModuleType.Recording, 1)]
-    public partial class add : ITestModule
+    [TestModule("fcdb7d03-aefb-4042-95a0-f28df72a7054", ModuleType.Recording, 1)]
+    public partial class FillPost : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
         public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static add instance = new add();
+        static FillPost instance = new FillPost();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public add()
+        public FillPost()
         {
+            varTitle = "";
+            varContent = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static add Instance
+        public static FillPost Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _varTitle;
+
+        /// <summary>
+        /// Gets or sets the value of variable varTitle.
+        /// </summary>
+        [TestVariable("7d6c5783-bfd6-4265-87fa-dda7708ed98d")]
+        public string varTitle
+        {
+            get { return _varTitle; }
+            set { _varTitle = value; }
+        }
+
+        string _varContent;
+
+        /// <summary>
+        /// Gets or sets the value of variable varContent.
+        /// </summary>
+        [TestVariable("34bb173a-b055-441b-9f10-c4fece70fa91")]
+        public string varContent
+        {
+            get { return _varContent; }
+            set { _varContent = value; }
+        }
 
 #endregion
 
@@ -79,22 +105,10 @@ namespace RanorexWordpressLibrary.Record
 
             Init();
 
-            Common.MouseClick.Mouse_Click_Left_Side_Menu(repo.ApplicationUnderTest.LeftSideBar.PostsInfo, repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo);
+            Common.Textbox.InputText(repo.ApplicationUnderTest.Post.txtTitleInfo, varTitle);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.btnPublish' at 33;21.", repo.ApplicationUnderTest.Post.btnPublishInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.Post.btnPublish.Click("33;21");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.txtTitle' at 403;15.", repo.ApplicationUnderTest.Post.txtTitleInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.Post.txtTitle.Click("403;15");
-            Delay.Milliseconds(0);
-            
-            Mouse_Click_txtContent(repo.ApplicationUnderTest.Post.txtContentInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute InnerText to 'ffffffff' on item 'ApplicationUnderTest.Post.txtTitle'.", repo.ApplicationUnderTest.Post.txtTitleInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.Post.txtTitle.Element.SetAttributeValue("InnerText", "ffffffff");
+            Common.Textbox.InputText(repo.ApplicationUnderTest.Post.txtContentInfo, varContent);
             Delay.Milliseconds(0);
             
         }

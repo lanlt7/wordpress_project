@@ -141,6 +141,18 @@
       <UserCode>true</UserCode>
       <id>b5537146-bbd8-4198-80cf-2af27e1dbf70</id>
     </Compile>
+    <Compile Include="Recording2.cs">
+      <BoundTo>576f59b3-caa7-4b85-aea2-ee00eebb907f</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53cb83f6-109d-4382-8907-8ea17521b2c3</id>
+    </Compile>
+    <Compile Include="Recording2.UserCode.cs">
+      <BoundTo>576f59b3-caa7-4b85-aea2-ee00eebb907f</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc992a32-ca26-44fd-815a-2e851d27f12a</id>
+    </Compile>
     <Compile Include="SampleRepository.cs">
       <BoundTo>b527a1a2-df78-4650-8439-0d68c5c7c6c9</BoundTo>
       <DependentUpon>SampleRepository.rxrep</DependentUpon>
@@ -165,6 +177,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>c06030ac-1e2f-424c-95d8-164b35f54896</id>
     </Content>
+    <None Include="Recording2.rxrec">
+      <BoundTo>b527a1a2-df78-4650-8439-0d68c5c7c6c9</BoundTo>
+      <id>576f59b3-caa7-4b85-aea2-ee00eebb907f</id>
+      <recordtableid>60c6607c-c7bf-4997-a4c9-3323b78817d9</recordtableid>
+    </None>
     <None Include="SampleRepository.rximg">
       <BoundTo>b527a1a2-df78-4650-8439-0d68c5c7c6c9</BoundTo>
       <DependentUpon>SampleRepository.rxrep</DependentUpon>

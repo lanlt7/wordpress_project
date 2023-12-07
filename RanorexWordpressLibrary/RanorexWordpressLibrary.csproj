@@ -126,10 +126,13 @@
     <Compile Include="AssemblyInfo.cs">
       <id>a42464cb-fb0a-48a2-9ea1-34b83c7b6097</id>
     </Compile>
-    <Compile Include="Common\Textbox\MouseClick.cs">
+    <Compile Include="Common\CodeLibrary\MouseClick.cs">
       <id>fe3cf6b7-bc06-4436-bda8-9b8269afea33</id>
     </Compile>
-    <Compile Include="Common\Textbox\Textbox.cs">
+    <Compile Include="Common\CodeLibrary\Post.cs">
+      <id>78404624-1515-4ff1-b03b-6ab582b16af5</id>
+    </Compile>
+    <Compile Include="Common\CodeLibrary\Textbox.cs">
       <id>3d5230f6-0ccf-4db7-abff-45d1d89f11df</id>
     </Compile>
     <Compile Include="Common\WebDriverExtension.cs">
@@ -179,6 +182,18 @@
       <UserCode>true</UserCode>
       <id>76cdb5db-3824-45f8-9a77-b50036dfbd81</id>
       <BoundTo>ceff3c19-a6a1-428e-98f6-ed4c167b4401</BoundTo>
+    </Compile>
+    <Compile Include="Record\Post\FillPost.cs">
+      <DependentUpon>FillPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>80f9cef0-7506-4ff4-8cd8-35d30981066c</id>
+      <BoundTo>61838da1-b090-4c3c-8c64-595a1c5b24e1</BoundTo>
+    </Compile>
+    <Compile Include="Record\Post\FillPost.UserCode.cs">
+      <DependentUpon>FillPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>804afe52-b454-4cc7-a5e7-f716f8cc03f6</id>
+      <BoundTo>61838da1-b090-4c3c-8c64-595a1c5b24e1</BoundTo>
     </Compile>
     <Compile Include="Record\Setup\CloseBrowser.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
@@ -235,6 +250,11 @@
       <id>ceff3c19-a6a1-428e-98f6-ed4c167b4401</id>
       <recordtableid>cdac8c09-9e4c-4eb3-8cb4-48e5b74e64c9</recordtableid>
     </None>
+    <None Include="Record\Post\FillPost.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>61838da1-b090-4c3c-8c64-595a1c5b24e1</id>
+      <recordtableid>fcdb7d03-aefb-4042-95a0-f28df72a7054</recordtableid>
+    </None>
     <None Include="Record\Setup\CloseBrowser.rxrec">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <id>5ad89efa-6591-4805-9936-934294ff39ff</id>
@@ -260,11 +280,14 @@
     <Folder Include="Common">
       <id>cf3b01e4-ef7f-4451-bc10-1b39213123e6</id>
     </Folder>
-    <Folder Include="Common\Textbox">
+    <Folder Include="Common\CodeLibrary">
       <id>64104eb7-2980-4d0c-be34-1631ee4e0648</id>
     </Folder>
     <Folder Include="Record">
       <id>5128fae4-d91e-4425-ad99-dd8d4814c9cf</id>
+    </Folder>
+    <Folder Include="Record\Post">
+      <id>343f7b45-cdfb-45ec-a108-ac283c4ac77d</id>
     </Folder>
     <Folder Include="Record\Setup">
       <id>cdf21c32-4356-477a-9c5d-b72aae9ef8e1</id>

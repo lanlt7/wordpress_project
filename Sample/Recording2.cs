@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary.Record
+namespace Sample
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The add recording.
+    ///The Recording2 recording.
     /// </summary>
-    [TestModule("fade24ea-6ff0-4314-9948-f0ea2db40698", ModuleType.Recording, 1)]
-    public partial class add : ITestModule
+    [TestModule("60c6607c-c7bf-4997-a4c9-3323b78817d9", ModuleType.Recording, 1)]
+    public partial class Recording2 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
+        /// Holds an instance of the SampleRepository repository.
         /// </summary>
-        public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
+        public static SampleRepository repo = SampleRepository.Instance;
 
-        static add instance = new add();
+        static Recording2 instance = new Recording2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public add()
+        public Recording2()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static add Instance
+        public static Recording2 Instance
         {
             get { return instance; }
         }
@@ -79,24 +79,6 @@ namespace RanorexWordpressLibrary.Record
 
             Init();
 
-            Common.MouseClick.Mouse_Click_Left_Side_Menu(repo.ApplicationUnderTest.LeftSideBar.PostsInfo, repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.btnPublish' at 33;21.", repo.ApplicationUnderTest.Post.btnPublishInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.Post.btnPublish.Click("33;21");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.txtTitle' at 403;15.", repo.ApplicationUnderTest.Post.txtTitleInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.Post.txtTitle.Click("403;15");
-            Delay.Milliseconds(0);
-            
-            Mouse_Click_txtContent(repo.ApplicationUnderTest.Post.txtContentInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute InnerText to 'ffffffff' on item 'ApplicationUnderTest.Post.txtTitle'.", repo.ApplicationUnderTest.Post.txtTitleInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.Post.txtTitle.Element.SetAttributeValue("InnerText", "ffffffff");
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data
