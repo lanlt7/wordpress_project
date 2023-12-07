@@ -29,7 +29,7 @@ namespace RanorexWordpressLibrary.Common
     [UserCodeCollection]
     public class WebDriverExtension
     {
-    	    	[UserCodeMethod]
+    	[UserCodeMethod]
     	public static bool IsWebDriverEndPoint()
     	{
     		if (Host.Current.TryGetAsWebDriverEndpoint() != null)

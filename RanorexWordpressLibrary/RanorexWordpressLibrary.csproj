@@ -168,6 +168,18 @@
       <UserCode>true</UserCode>
       <id>678b1b8e-0802-4e57-846b-828c1a378ffa</id>
     </Compile>
+    <Compile Include="Post\AddNewPost.cs">
+      <DependentUpon>AddNewPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8faca9cb-95fe-461f-b599-3c4e15ebea53</id>
+      <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
+    </Compile>
+    <Compile Include="Post\AddNewPost.UserCode.cs">
+      <DependentUpon>AddNewPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9b56ebc-b653-4fdd-887a-690936d01b8b</id>
+      <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
+    </Compile>
     <Compile Include="Program.cs">
       <id>45af0839-2493-4e69-891d-2a874de08f91</id>
     </Compile>
@@ -176,18 +188,6 @@
       <DependentUpon>RanorexWordpressLibraryRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>bab93f34-ba91-425d-b1da-0ecf2bc24711</id>
-    </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>bfea88f6-2a3a-4502-aa35-7f812a2137e3</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b394e8e5-678b-4126-bc94-cd7259d1e0c2</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>bfea88f6-2a3a-4502-aa35-7f812a2137e3</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>19f53e84-eb27-4c4a-b1ab-790c1d4108a9</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +209,11 @@
       <id>f26c9b22-a274-4dff-a931-3592c6e3e408</id>
       <recordtableid>5378a50d-e133-44d3-ab37-fb6b73e389e9</recordtableid>
     </None>
+    <None Include="Post\AddNewPost.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>de823c6d-c0de-48c1-8a61-9a611846e097</id>
+      <recordtableid>7ccce584-6f4f-44f1-9597-2de6693bfe0c</recordtableid>
+    </None>
     <None Include="RanorexWordpressLibraryRepository.rximg">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <DependentUpon>RanorexWordpressLibraryRepository.rxrep</DependentUpon>
@@ -219,11 +224,6 @@
       <id>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</id>
       <repoid>7d26d7be-3b31-4650-a6f7-74688f90bd34</repoid>
       <reporootid>78cdb3e0-f1ee-4349-aaba-d9e99da4313e</reporootid>
-    </None>
-    <None Include="Recording1.rxrec">
-      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
-      <id>bfea88f6-2a3a-4502-aa35-7f812a2137e3</id>
-      <recordtableid>ccfc389c-46bc-4c43-b12f-06d6b2817f69</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +242,9 @@
     </Folder>
     <Folder Include="Common\Textbox">
       <id>64104eb7-2980-4d0c-be34-1631ee4e0648</id>
+    </Folder>
+    <Folder Include="Post">
+      <id>1e16fda9-f7a6-42b1-b129-9bd54e69f6c5</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

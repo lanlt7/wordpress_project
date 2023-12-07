@@ -53,6 +53,59 @@ name="RanorexWordpressLibraryRepository">
 			searchtimeout="30000ms">
 				/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']
 			</item>
+			<folder
+			capname="webdocument"
+			id="5d447b3f-3e38-41b5-b117-cb19f82e1703"
+			isrooted="True"
+			name="LeftSideBar"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="755005be-9dec-4c99-9e90-134ace2f8ee0"
+				name="Posts"
+				refimgid="a0568d83-6149-4b15-b578-441353d40713"
+				robustPath="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']/?/?/div[@innertext='Posts']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//div[@innertext='Posts']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="fa819b3f-baff-42d9-a1c4-b5f68a6bb379"
+				name="contextmenuAddNew"
+				refimgid="6aea43a7-9e0b-4903-a7de-9da75bb38051"
+				refpath="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']/ul/li[3]/a[@innertext='Add New']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='Add New']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='Add New']
+				</item>
+				<basepath>
+					/dom[@domain='webtest.ranorex.org']
+				</basepath>
+			</folder>
+			<folder
+			capname="webdocument"
+			id="c72343c8-af1a-46aa-b739-23d896fd328c"
+			isrooted="True"
+			name="Post"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,h2tag"
+				capname="h2tag"
+				id="4965f802-de8b-42b0-b38a-073c4da64aab"
+				name="titleAddNewPost"
+				refimgid="2f8e7c0a-e4dc-4b12-b2f7-89239e392f39"
+				robustPath="/dom[@domain='webtest.ranorex.org']//div[#'wpbody-content']/?/?/h2[@innertext='Add New Post']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//div[#'wpbody-content']//h2[@innertext='Add New Post']
+				</item>
+				<basepath>
+					/dom[@domain='webtest.ranorex.org']
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='webtest.ranorex.org']
 			</basepath>

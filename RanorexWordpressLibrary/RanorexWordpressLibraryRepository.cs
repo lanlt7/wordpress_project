@@ -85,6 +85,8 @@ namespace RanorexWordpressLibrary
         [RepositoryFolder("8ca35afe-5cc1-48cc-9960-5dfc3a45bd5e")]
         public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
         {
+            RanorexWordpressLibraryRepositoryFolders.LeftSideBarFolder _leftsidebar;
+            RanorexWordpressLibraryRepositoryFolders.PostFolder _post;
             RepoItemInfo _userloginInfo;
             RepoItemInfo _userpassInfo;
             RepoItemInfo _wpsubmitInfo;
@@ -95,6 +97,8 @@ namespace RanorexWordpressLibrary
             public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ApplicationUnderTest", "/dom[@domain='webtest.ranorex.org']", parentFolder, 30000, null, false, "8ca35afe-5cc1-48cc-9960-5dfc3a45bd5e", "")
             {
+                _leftsidebar = new RanorexWordpressLibraryRepositoryFolders.LeftSideBarFolder(this);
+                _post = new RanorexWordpressLibraryRepositoryFolders.PostFolder(this);
                 _userloginInfo = new RepoItemInfo(this, "UserLogin", ".//input[#'user_login']", ".//input[#'user_login']", 30000, null, "d2415b1d-8434-4232-b0b4-5e9ab2986712");
                 _userpassInfo = new RepoItemInfo(this, "UserPass", ".//input[#'user_pass']", ".//input[#'user_pass']", 30000, null, "231b4d45-693d-44f4-9a60-c3413eb1effd");
                 _wpsubmitInfo = new RepoItemInfo(this, "WpSubmit", ".//input[#'wp-submit']", ".//input[#'wp-submit']", 30000, null, "2490cfb5-276b-4de9-9000-a704831ca085");
@@ -193,6 +197,182 @@ namespace RanorexWordpressLibrary
                 get
                 {
                     return _wpsubmitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LeftSideBar folder.
+            /// </summary>
+            [RepositoryFolder("5d447b3f-3e38-41b5-b117-cb19f82e1703")]
+            public virtual RanorexWordpressLibraryRepositoryFolders.LeftSideBarFolder LeftSideBar
+            {
+                get { return _leftsidebar; }
+            }
+
+            /// <summary>
+            /// The Post folder.
+            /// </summary>
+            [RepositoryFolder("c72343c8-af1a-46aa-b739-23d896fd328c")]
+            public virtual RanorexWordpressLibraryRepositoryFolders.PostFolder Post
+            {
+                get { return _post; }
+            }
+        }
+
+        /// <summary>
+        /// The LeftSideBarFolder folder.
+        /// </summary>
+        [RepositoryFolder("5d447b3f-3e38-41b5-b117-cb19f82e1703")]
+        public partial class LeftSideBarFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _postsInfo;
+            RepoItemInfo _contextmenuaddnewInfo;
+
+            /// <summary>
+            /// Creates a new LeftSideBar  folder.
+            /// </summary>
+            public LeftSideBarFolder(RepoGenBaseFolder parentFolder) :
+                    base("LeftSideBar", "", parentFolder, 30000, null, false, "5d447b3f-3e38-41b5-b117-cb19f82e1703", "")
+            {
+                _postsInfo = new RepoItemInfo(this, "Posts", ".//li[#'menu-posts']//div[@innertext='Posts']", ".//li[#'menu-posts']/?/?/div[@innertext='Posts']", 30000, null, "755005be-9dec-4c99-9e90-134ace2f8ee0");
+                _contextmenuaddnewInfo = new RepoItemInfo(this, "contextmenuAddNew", ".//li[#'menu-posts']//a[@innertext='Add New']", ".//li[#'menu-posts']//a[@innertext='Add New']", 30000, null, "fa819b3f-baff-42d9-a1c4-b5f68a6bb379");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5d447b3f-3e38-41b5-b117-cb19f82e1703")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5d447b3f-3e38-41b5-b117-cb19f82e1703")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Posts item.
+            /// </summary>
+            [RepositoryItem("755005be-9dec-4c99-9e90-134ace2f8ee0")]
+            public virtual Ranorex.DivTag Posts
+            {
+                get
+                {
+                    return _postsInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Posts item info.
+            /// </summary>
+            [RepositoryItemInfo("755005be-9dec-4c99-9e90-134ace2f8ee0")]
+            public virtual RepoItemInfo PostsInfo
+            {
+                get
+                {
+                    return _postsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The contextmenuAddNew item.
+            /// </summary>
+            [RepositoryItem("fa819b3f-baff-42d9-a1c4-b5f68a6bb379")]
+            public virtual Ranorex.ATag contextmenuAddNew
+            {
+                get
+                {
+                    return _contextmenuaddnewInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The contextmenuAddNew item info.
+            /// </summary>
+            [RepositoryItemInfo("fa819b3f-baff-42d9-a1c4-b5f68a6bb379")]
+            public virtual RepoItemInfo contextmenuAddNewInfo
+            {
+                get
+                {
+                    return _contextmenuaddnewInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PostFolder folder.
+        /// </summary>
+        [RepositoryFolder("c72343c8-af1a-46aa-b739-23d896fd328c")]
+        public partial class PostFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titleaddnewpostInfo;
+
+            /// <summary>
+            /// Creates a new Post  folder.
+            /// </summary>
+            public PostFolder(RepoGenBaseFolder parentFolder) :
+                    base("Post", "", parentFolder, 30000, null, false, "c72343c8-af1a-46aa-b739-23d896fd328c", "")
+            {
+                _titleaddnewpostInfo = new RepoItemInfo(this, "titleAddNewPost", ".//div[#'wpbody-content']//h2[@innertext='Add New Post']", ".//div[#'wpbody-content']/?/?/h2[@innertext='Add New Post']", 30000, null, "4965f802-de8b-42b0-b38a-073c4da64aab");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c72343c8-af1a-46aa-b739-23d896fd328c")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c72343c8-af1a-46aa-b739-23d896fd328c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The titleAddNewPost item.
+            /// </summary>
+            [RepositoryItem("4965f802-de8b-42b0-b38a-073c4da64aab")]
+            public virtual Ranorex.H2Tag titleAddNewPost
+            {
+                get
+                {
+                    return _titleaddnewpostInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The titleAddNewPost item info.
+            /// </summary>
+            [RepositoryItemInfo("4965f802-de8b-42b0-b38a-073c4da64aab")]
+            public virtual RepoItemInfo titleAddNewPostInfo
+            {
+                get
+                {
+                    return _titleaddnewpostInfo;
                 }
             }
         }

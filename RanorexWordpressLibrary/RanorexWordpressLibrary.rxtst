@@ -6,12 +6,6 @@
 			id="2e284a59-1052-4d8f-81b0-7a0f6d5053b4"
 			name="teardown">
 			</teardown>
-			<testmodule
-			id="744fe81d-efb4-47e3-acb3-fb9578ca6f19"
-			name="Recording1"
-			ref="ccfc389c-46bc-4c43-b12f-06d6b2817f69"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="8570347e-ec8e-4950-8c30-10ac722f1b69"
 			name="RanorexWordpressLibrary"
@@ -87,10 +81,6 @@
 							name="OpenBrowser">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="744fe81d-efb4-47e3-acb3-fb9578ca6f19"
-						name="Recording1">
-						</testmodule>
 						<teardown
 						id="2e284a59-1052-4d8f-81b0-7a0f6d5053b4"
 						name="teardown">

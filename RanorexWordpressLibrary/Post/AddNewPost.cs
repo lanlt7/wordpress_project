@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary
+namespace RanorexWordpressLibrary.Post
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The AddNewPost recording.
     /// </summary>
-    [TestModule("ccfc389c-46bc-4c43-b12f-06d6b2817f69", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("7ccce584-6f4f-44f1-9597-2de6693bfe0c", ModuleType.Recording, 1)]
+    public partial class AddNewPost : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RanorexWordpressLibraryRepository repository.
+        /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
-        public static RanorexWordpressLibraryRepository repo = RanorexWordpressLibraryRepository.Instance;
+        public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static AddNewPost instance = new AddNewPost();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public AddNewPost()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static AddNewPost Instance
         {
             get { return instance; }
         }
@@ -79,6 +79,14 @@ namespace RanorexWordpressLibrary
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.Posts' at Center.", repo.ApplicationUnderTest.LeftSideBar.PostsInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.LeftSideBar.Posts.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.LeftSideBar.contextmenuAddNew' at Center.", repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNew.Click();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

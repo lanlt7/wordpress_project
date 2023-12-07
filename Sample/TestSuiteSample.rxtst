@@ -19,7 +19,7 @@
 			<testcase
 			datasource="Default_Data"
 			id="6e5da53c-f672-4b28-affb-d57439896c08"
-			name="TestCase">
+			name="Verify_User_Can_Create_Blog_Post">
 				<parameters>
 					<param
 					mask="False"
@@ -109,7 +109,7 @@
 				name="TestSuiteSample">
 					<testcase
 					id="6e5da53c-f672-4b28-affb-d57439896c08"
-					name="TestCase">
+					name="Verify_User_Can_Create_Blog_Post">
 						<setup
 						id="2ae354f0-c589-4a03-8831-f809d6af5af9"
 						name="setup">
