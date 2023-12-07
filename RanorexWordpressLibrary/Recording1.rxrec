@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ccfc389c-46bc-4c43-b12f-06d6b2817f69"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="RanorexWordpressLibrary">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
+	name="RanorexWordpressLibraryRepository"
+	relativepath="RanorexWordpressLibraryRepository.rxrep">
+		<codegen
+		classname="RanorexWordpressLibraryRepository"
+		namespace="RanorexWordpressLibrary">
+		</codegen>
+		<rootfolder
+		id="78cdb3e0-f1ee-4349-aaba-d9e99da4313e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

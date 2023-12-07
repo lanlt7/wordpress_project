@@ -1,0 +1,80 @@
+﻿<repository
+id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
+name="RanorexWordpressLibraryRepository">
+	<codegen
+	classname="RanorexWordpressLibraryRepository"
+	namespace="RanorexWordpressLibrary">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="78cdb3e0-f1ee-4349-aaba-d9e99da4313e"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="8ca35afe-5cc1-48cc-9960-5dfc3a45bd5e"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="d2415b1d-8434-4232-b0b4-5e9ab2986712"
+			name="UserLogin"
+			refimgid="dc5f2101-61a6-443c-a348-8fb6e1b0a29d"
+			refpath="/dom[@domain='webtest.ranorex.org']//input[#'user_login']"
+			robustPath="/dom[@domain='webtest.ranorex.org']//input[#'user_login']"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[#'user_login']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="231b4d45-693d-44f4-9a60-c3413eb1effd"
+			name="UserPass"
+			refimgid="49f388b2-3d45-4a7d-b84d-adadc39ebcc9"
+			refpath="/dom[@domain='webtest.ranorex.org']//input[#'user_pass']"
+			robustPath="/dom[@domain='webtest.ranorex.org']//input[#'user_pass']"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[#'user_pass']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2490cfb5-276b-4de9-9000-a704831ca085"
+			name="WpSubmit"
+			refimgid="7b1c16df-e30e-4bf3-b361-edb3a2dc7e19"
+			refpath="/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']"
+			robustPath="/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']
+			</item>
+			<basepath>
+				/dom[@domain='webtest.ranorex.org']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

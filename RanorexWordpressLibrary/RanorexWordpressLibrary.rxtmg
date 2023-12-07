@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="RanorexWordpressLibrary"
+      id="eca917cd-90bc-40f2-a6c0-ba6ae7ca8f74"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="RanorexWordpressLibrary"
+      id="eca917cd-90bc-40f2-a6c0-ba6ae7ca8f74"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
