@@ -33,8 +33,17 @@ namespace RanorexWordpressLibrary.Common
 		public static void FillPost(string txtTitle, string txtContent)
 		{
 			RanorexWordpressLibraryRepository _repo = RanorexWordpressLibraryRepository.Instance;
-			_repo.ApplicationUnderTest.Post.txtTitle.PressKeys(txtTitle);
-			_repo.ApplicationUnderTest.Post.txtContent.PressKeys(txtContent);
+			if(!string.IsNullOrEmpty(txtTitle))
+			{
+				Report.Log(ReportLevel.Info, "Input Text", string.Format("Input text '{0}'.", txtTitle));
+				_repo.ApplicationUnderTest.Post.txtTitle.PressKeys(txtTitle);
+			}
+			
+			if(!string.IsNullOrEmpty(txtContent))
+			{
+				Report.Log(ReportLevel.Info, "Input Text", string.Format("Input text '{0}'.", txtContent));
+				_repo.ApplicationUnderTest.Post.txtContent.PressKeys(txtContent);
+			}
 		}
     }
 }

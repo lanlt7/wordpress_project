@@ -40,8 +40,9 @@ namespace RanorexWordpressLibrary.Common
         [UserCodeMethod]
         public static string Get_value_return_variable(RepoItemInfo spantagInfo)
         {
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'spantagInfo' and assigning its value to variable 'return_variable'.", spantagInfo);
+//	        Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'spantagInfo' and assigning its value to variable 'return_variable'.", spantagInfo);
             string return_variable = spantagInfo.FindAdapter<SpanTag>().Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get", string.Format("Get_value_return_variable '{0}'.", return_variable), spantagInfo);
             return return_variable;
         }
     }

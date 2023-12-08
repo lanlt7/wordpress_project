@@ -109,8 +109,7 @@ mode="Global">
 				</argument>
 				<argument
 				argname="txtContent"
-				id="3a93fe9f-b08f-4f6a-8ff8-a3d279f38f8d"
-				variable="varContent">
+				id="3a93fe9f-b08f-4f6a-8ff8-a3d279f38f8d">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

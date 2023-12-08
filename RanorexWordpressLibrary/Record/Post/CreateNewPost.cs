@@ -108,7 +108,7 @@ namespace RanorexWordpressLibrary.Record.Post
             Common.MouseClick.Mouse_Click_Left_Side_Menu(repo.ApplicationUnderTest.LeftSideBar.PostsInfo, repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo);
             Delay.Milliseconds(0);
             
-            Common.Post.FillPost(varTitle, varContent);
+            Common.Post.FillPost(varTitle, "");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.btnPublish' at Center.", repo.ApplicationUnderTest.Post.btnPublishInfo, new RecordItemIndex(2));
