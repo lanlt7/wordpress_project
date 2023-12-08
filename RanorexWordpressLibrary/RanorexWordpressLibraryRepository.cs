@@ -508,7 +508,7 @@ namespace RanorexWordpressLibrary
                     base("SinglePost", "", parentFolder, 30000, null, false, "36bdcdf6-f93e-4405-9fc0-68cc65d78973", "")
             {
                 _lblpagetitleInfo = new RepoItemInfo(this, "lblPagetitle", ".//h1[#'pagetitle']", ".//h1[#'pagetitle']", 30000, null, "62517bb8-b603-4303-8417-2847eecf9432");
-                _lblcontentInfo = new RepoItemInfo(this, "lblContent", ".//div[@class='entry']", ".//div[#'Content']//p[@innertext='This is content']", 30000, null, "879ade36-91a3-4efa-b21a-797a6a7b3efd");
+                _lblcontentInfo = new RepoItemInfo(this, "lblContent", ".//div[@class='entry']/p", ".//div[#'Content']//p[@innertext='This is content']", 30000, null, "879ade36-91a3-4efa-b21a-797a6a7b3efd");
             }
 
             /// <summary>
@@ -563,11 +563,11 @@ namespace RanorexWordpressLibrary
             /// The lblContent item.
             /// </summary>
             [RepositoryItem("879ade36-91a3-4efa-b21a-797a6a7b3efd")]
-            public virtual Ranorex.DivTag lblContent
+            public virtual Ranorex.PTag lblContent
             {
                 get
                 {
-                    return _lblcontentInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _lblcontentInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 

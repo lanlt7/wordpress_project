@@ -134,6 +134,12 @@
 					variableid="efe8c176-ace1-49f0-9ad7-48f88194b300"
 					variablename="title">
 					</var>
+					<var
+					dataname="content"
+					datasourceid="ba664145-fc2d-4f3a-b346-3f31d5abf396"
+					variableid="f23cb5d0-fdb5-454e-853b-26dcfed2e2d1"
+					variablename="content">
+					</var>
 				</databinding>
 			</testmodule>
 			<testsuite

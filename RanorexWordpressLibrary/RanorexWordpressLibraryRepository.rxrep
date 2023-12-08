@@ -167,13 +167,13 @@ name="RanorexWordpressLibraryRepository">
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
-				capname="divtag"
+				capname="ptag"
 				id="879ade36-91a3-4efa-b21a-797a6a7b3efd"
 				name="lblContent"
-				refimgid="7b1c7c6f-d465-406c-8631-09865248b0b2"
+				refimgid="1f69c1de-cb91-4864-a6ed-2af096c609c1"
 				robustPath="/dom[@domain='webtest.ranorex.org']//div[#'Content']//p[@innertext='This is content']"
 				searchtimeout="30000ms">
-					/dom[@domain='webtest.ranorex.org']//div[@class='entry']
+					/dom[@domain='webtest.ranorex.org']//div[@class='entry']/p
 				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']

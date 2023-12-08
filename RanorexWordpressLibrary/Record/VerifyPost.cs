@@ -42,6 +42,7 @@ namespace RanorexWordpressLibrary.Record
         public VerifyPost()
         {
             title = "";
+            content = "";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace RanorexWordpressLibrary.Record
         {
             get { return _title; }
             set { _title = value; }
+        }
+
+        string _content;
+
+        /// <summary>
+        /// Gets or sets the value of variable content.
+        /// </summary>
+        [TestVariable("f23cb5d0-fdb5-454e-853b-26dcfed2e2d1")]
+        public string content
+        {
+            get { return _content; }
+            set { _content = value; }
         }
 
 #endregion
@@ -92,7 +105,10 @@ namespace RanorexWordpressLibrary.Record
 
             Init();
 
-            Common.CommonCode.Verify_Text_Exist(repo.ApplicationUnderTest.SinglePost.lblPagetitleInfo, "Text", title);
+            Common.CommonCode.Verify_Text_Exist(repo.ApplicationUnderTest.SinglePost.lblPagetitleInfo, "InnerText", title);
+            Delay.Milliseconds(0);
+            
+            Common.CommonCode.Verify_Text_Exist(repo.ApplicationUnderTest.SinglePost.lblContentInfo, "InnerText", content);
             Delay.Milliseconds(0);
             
         }

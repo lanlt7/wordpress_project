@@ -27,6 +27,10 @@ mode="Global">
 		id="efe8c176-ace1-49f0-9ad7-48f88194b300"
 		name="title">
 		</var>
+		<var
+		id="f23cb5d0-fdb5-454e-853b-26dcfed2e2d1"
+		name="content">
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
@@ -67,13 +71,67 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Text
+						InnerText
 					</argvalue>
 				</argument>
 				<argument
 				argname="varText"
 				id="36225725-d76c-46fd-8022-e5e4a50c57cb"
 				variable="title">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						$title
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="CommonCode"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Verify_Text_Exist"
+		namespace="RanorexWordpressLibrary.Common"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49dbe24a-753e-471f-af2e-68f29497692d">
+				<argument
+				argname="controlInfo"
+				id="1922107f-8683-41a2-97f8-0cc1e1e45746">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="879ade36-91a3-4efa-b21a-797a6a7b3efd"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='webtest.ranorex.org']//div[@class='entry']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="varType"
+				id="38d9a146-6c3b-493b-ac32-9a4709528e1f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						InnerText
+					</argvalue>
+				</argument>
+				<argument
+				argname="varText"
+				id="36225725-d76c-46fd-8022-e5e4a50c57cb"
+				variable="content">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
