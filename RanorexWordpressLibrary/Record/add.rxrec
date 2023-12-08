@@ -213,7 +213,6 @@ mode="Global">
 					/dom[@domain='webtest.ranorex.org']//input[#'publish']
 				</path>
 				<robustPath>
-					/dom[@domain='webtest.ranorex.org']//input[#'publish']
 				</robustPath>
 			</info>
 			<helperscreenshot
@@ -380,7 +379,6 @@ uLFbo0gf/9k=
 					/dom[@domain='webtest.ranorex.org']//input[#'title']
 				</path>
 				<robustPath>
-					/dom[@domain='webtest.ranorex.org']//input[#'title']
 				</robustPath>
 			</info>
 			<helperscreenshot

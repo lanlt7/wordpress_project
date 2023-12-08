@@ -107,7 +107,6 @@ name="RanorexWordpressLibraryRepository">
 				id="a6e53366-8522-4528-9cb5-c22e731fec0c"
 				name="txtTitle"
 				refimgid="f0c141b1-4fdc-4d18-97f0-c5eb7cf3ed0f"
-				refpath="/dom[@domain='webtest.ranorex.org']//input[#'title']"
 				robustPath="/dom[@domain='webtest.ranorex.org']//input[#'title']"
 				searchtimeout="30000ms">
 					/dom[@domain='webtest.ranorex.org']//input[#'title']
@@ -118,7 +117,6 @@ name="RanorexWordpressLibraryRepository">
 				id="68aa9aa8-f921-4dad-906c-c52e8131441c"
 				name="txtContent"
 				refimgid="3f4e2c7a-c64f-43ca-ada5-b789d295ccee"
-				refpath="/dom[@domain='webtest.ranorex.org']//textarea[#'content']"
 				robustPath="/dom[@domain='webtest.ranorex.org']//textarea[#'content']"
 				searchtimeout="30000ms">
 					/dom[@domain='webtest.ranorex.org']//textarea[#'content']
@@ -129,10 +127,9 @@ name="RanorexWordpressLibraryRepository">
 				id="461d1826-e1c9-41e2-b2bc-6af888f26c21"
 				name="btnPublish"
 				refimgid="72b9486a-3682-4bfe-b663-58bb23d7969f"
-				refpath="/dom[@domain='webtest.ranorex.org']//input[#'publish']"
 				robustPath="/dom[@domain='webtest.ranorex.org']//input[#'publish']"
 				searchtimeout="30000ms">
-					/dom[@domain='webtest.ranorex.org']//input[#'publish']
+					/dom[@domain='webtest.ranorex.org']//input[@type='submit' and @name='publish']
 				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']

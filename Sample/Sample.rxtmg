@@ -23,6 +23,10 @@ rxversion="10.7">
 			id="bda76a6d-1a3b-4875-a158-abac40ef0de5"
 			name="ModuleGroup">
 			</modulegroupdef>
+			<modulegroupdef
+			id="c1684248-69b6-4dd6-9f93-05805d2c05a6"
+			name="ModuleGroup1">
+			</modulegroupdef>
 		</flatlistofchildren>
 		<childhierarchy>
 			<modulegroups
@@ -39,6 +43,10 @@ rxversion="10.7">
 					id="0f467321-230a-4499-afe8-38a5882fd13d"
 					name="Recording2">
 					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="c1684248-69b6-4dd6-9f93-05805d2c05a6"
+				name="ModuleGroup1">
 				</modulegroupdef>
 			</modulegroups>
 		</childhierarchy>

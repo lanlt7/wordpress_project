@@ -135,6 +135,9 @@
     <Compile Include="Common\CodeLibrary\Textbox.cs">
       <id>3d5230f6-0ccf-4db7-abff-45d1d89f11df</id>
     </Compile>
+    <Compile Include="Common\CommonCode.cs">
+      <id>a2ac6da8-0712-4df3-95e8-7e2088fe6cf5</id>
+    </Compile>
     <Compile Include="Common\WebDriverExtension.cs">
       <id>3a9f945f-c563-46c0-ae6e-6eba8d3bfb70</id>
     </Compile>
@@ -170,6 +173,30 @@
       <UserCode>true</UserCode>
       <id>a9b56ebc-b653-4fdd-887a-690936d01b8b</id>
       <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
+    </Compile>
+    <Compile Include="Record\CreateNewPost.cs">
+      <BoundTo>5406877d-6254-4107-be10-9dfad5443292</BoundTo>
+      <DependentUpon>CreateNewPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f753076-1fb5-4669-b22e-f5bcc71ac555</id>
+    </Compile>
+    <Compile Include="Record\CreateNewPost.UserCode.cs">
+      <BoundTo>5406877d-6254-4107-be10-9dfad5443292</BoundTo>
+      <DependentUpon>CreateNewPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>67f3d96e-7b44-47eb-a675-523275dafffc</id>
+    </Compile>
+    <Compile Include="Record\geturl.cs">
+      <BoundTo>442b8f6b-b915-4480-adac-d050390122f4</BoundTo>
+      <DependentUpon>geturl.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3731f29c-7813-4422-a29e-a893c5387daf</id>
+    </Compile>
+    <Compile Include="Record\geturl.UserCode.cs">
+      <BoundTo>442b8f6b-b915-4480-adac-d050390122f4</BoundTo>
+      <DependentUpon>geturl.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>911666e8-c6cf-4984-af11-d656a6b5efe1</id>
     </Compile>
     <Compile Include="Record\Login.cs">
       <DependentUpon>Login.rxrec</DependentUpon>
@@ -219,6 +246,9 @@
       <id>678b1b8e-0802-4e57-846b-828c1a378ffa</id>
       <BoundTo>f26c9b22-a274-4dff-a931-3592c6e3e408</BoundTo>
     </Compile>
+    <Compile Include="UserCodeCollection1_Test.cs">
+      <id>81d8292a-9789-4c54-9cde-d260a1e84d9c</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -244,6 +274,16 @@
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <id>de823c6d-c0de-48c1-8a61-9a611846e097</id>
       <recordtableid>7ccce584-6f4f-44f1-9597-2de6693bfe0c</recordtableid>
+    </None>
+    <None Include="Record\CreateNewPost.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>5406877d-6254-4107-be10-9dfad5443292</id>
+      <recordtableid>43d43b42-1ad6-4102-8d4f-b2374f20ea45</recordtableid>
+    </None>
+    <None Include="Record\geturl.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>442b8f6b-b915-4480-adac-d050390122f4</id>
+      <recordtableid>9dc6ccf5-2d29-42b7-8432-fba28dc3409b</recordtableid>
     </None>
     <None Include="Record\Login.rxrec">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>

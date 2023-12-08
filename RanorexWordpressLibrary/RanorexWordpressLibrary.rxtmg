@@ -3,9 +3,17 @@
 rxversion="10.7">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<simplefolder
+			id="593bd4c4-53be-403e-a032-46b5daa4fd5a"
+			name="NewFolder">
+			</simplefolder>
 			<modulegroupdef
 			id="7c6148c7-a01f-4f74-90e3-168a6932e1fd"
 			name="ModuleGroup">
+			</modulegroupdef>
+			<modulegroupdef
+			id="b8540c22-5947-4af1-af47-bf33ebd1abb4"
+			name="ModuleGroup1">
 			</modulegroupdef>
 			<modulegroups
 			id="eca917cd-90bc-40f2-a6c0-ba6ae7ca8f74"
@@ -19,6 +27,14 @@ rxversion="10.7">
 				<modulegroupdef
 				id="7c6148c7-a01f-4f74-90e3-168a6932e1fd"
 				name="ModuleGroup">
+					<simplefolder
+					id="593bd4c4-53be-403e-a032-46b5daa4fd5a"
+					name="NewFolder">
+					</simplefolder>
+				</modulegroupdef>
+				<modulegroupdef
+				id="b8540c22-5947-4af1-af47-bf33ebd1abb4"
+				name="ModuleGroup1">
 				</modulegroupdef>
 			</modulegroups>
 		</childhierarchy>

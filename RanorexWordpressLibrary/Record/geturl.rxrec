@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9dc6ccf5-2d29-42b7-8432-fba28dc3409b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="geturl"
+	namespace="RanorexWordpressLibrary.Record">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<getvaluerecorditem
+		attrname=""
+		enabled="True"
+		optional="False"
+		searchpropertyid="8bc66bf2-b631-4d6b-b180-dd0e9aca1ae3"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</getvaluerecorditem>
+	</recorditems>
+	<repository
+	id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
+	name="RanorexWordpressLibraryRepository"
+	relativepath="..\RanorexWordpressLibraryRepository.rxrep">
+		<codegen
+		classname="RanorexWordpressLibraryRepository"
+		namespace="RanorexWordpressLibrary">
+		</codegen>
+		<rootfolder
+		id="78cdb3e0-f1ee-4349-aaba-d9e99da4313e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		geturl.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

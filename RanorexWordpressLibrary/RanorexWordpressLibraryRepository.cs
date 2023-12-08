@@ -331,7 +331,7 @@ namespace RanorexWordpressLibrary
                 _titleaddnewpostInfo = new RepoItemInfo(this, "titleAddNewPost", ".//div[#'wpbody-content']//h2[@innertext='Add New Post']", ".//div[#'wpbody-content']/?/?/h2[@innertext='Add New Post']", 30000, null, "4965f802-de8b-42b0-b38a-073c4da64aab");
                 _txttitleInfo = new RepoItemInfo(this, "txtTitle", ".//input[#'title']", ".//input[#'title']", 30000, null, "a6e53366-8522-4528-9cb5-c22e731fec0c");
                 _txtcontentInfo = new RepoItemInfo(this, "txtContent", ".//textarea[#'content']", ".//textarea[#'content']", 30000, null, "68aa9aa8-f921-4dad-906c-c52e8131441c");
-                _btnpublishInfo = new RepoItemInfo(this, "btnPublish", ".//input[#'publish']", ".//input[#'publish']", 30000, null, "461d1826-e1c9-41e2-b2bc-6af888f26c21");
+                _btnpublishInfo = new RepoItemInfo(this, "btnPublish", ".//input[@type='submit' and @name='publish']", ".//input[#'publish']", 30000, null, "461d1826-e1c9-41e2-b2bc-6af888f26c21");
             }
 
             /// <summary>

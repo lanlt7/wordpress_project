@@ -26,12 +26,6 @@
 			id="2ae354f0-c589-4a03-8831-f809d6af5af9"
 			name="setup">
 			</setup>
-			<testmodule
-			id="5012807e-f3e9-4201-a3d0-9fd7755a04aa"
-			name="add"
-			ref="fade24ea-6ff0-4314-9948-f0ea2db40698"
-			type="Recording">
-			</testmodule>
 			<teardown
 			id="6e5b2e12-2add-44f6-977a-6af23fd27e41"
 			name="teardown">
@@ -48,6 +42,26 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="75b968a1-3764-4d56-9bc7-73c73ff60858"
+			name="CreateNewPost"
+			ref="43d43b42-1ad6-4102-8d4f-b2374f20ea45"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="title"
+					datasourceid="ba664145-fc2d-4f3a-b346-3f31d5abf396"
+					variableid="94f8039e-5bef-45d4-bbf6-289d78e02ba6"
+					variablename="varTitle">
+					</var>
+					<var
+					dataname="content"
+					datasourceid="ba664145-fc2d-4f3a-b346-3f31d5abf396"
+					variableid="27ed0fb0-0648-43e9-af23-a2a1772de227"
+					variablename="varContent">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="a849dd06-1c07-4a57-8f25-106cc1c6d589"
 			name="TestSuiteSample"
@@ -58,6 +72,12 @@
 			id="a98c7752-a231-4cde-9b11-64d38edf951d"
 			name="CloseBrowser"
 			ref="4066f950-2221-402d-b807-7668fe4d404e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d4d8d414-93a9-4b3a-9628-7a5185c86b2f"
+			name="geturl"
+			ref="9dc6ccf5-2d29-42b7-8432-fba28dc3409b"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -135,8 +155,12 @@
 						name="Login">
 						</testmodule>
 						<testmodule
-						id="5012807e-f3e9-4201-a3d0-9fd7755a04aa"
-						name="add">
+						id="75b968a1-3764-4d56-9bc7-73c73ff60858"
+						name="CreateNewPost">
+						</testmodule>
+						<testmodule
+						id="d4d8d414-93a9-4b3a-9628-7a5185c86b2f"
+						name="geturl">
 						</testmodule>
 						<teardown
 						id="6e5b2e12-2add-44f6-977a-6af23fd27e41"
@@ -194,6 +218,12 @@
 				<column>
 					password
 				</column>
+				<column>
+					title
+				</column>
+				<column>
+					content
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -205,6 +235,12 @@
 					<th>
 						password
 					</th>
+					<th>
+						title
+					</th>
+					<th>
+						content
+					</th>
 				</tr>
 				<tr>
 					<td>
@@ -212,6 +248,46 @@
 					</td>
 					<td>
 						ranorex
+					</td>
+					<td>
+						New Post Title
+					</td>
+					<td>
+						This is content
+					</td>
+				</tr>
+			</table>
+		</DataSource>
+		<DataSource
+		id="cee37595-89ff-41c2-a715-76e5a4be54da"
+		lastknownrowcount="1"
+		name="Post"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					Title
+				</column>
+				<column>
+					Content
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						Title
+					</th>
+					<th>
+						Content
+					</th>
+				</tr>
+				<tr>
+					<td>
+						New Post
+					</td>
+					<td>
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 					</td>
 				</tr>
 			</table>
