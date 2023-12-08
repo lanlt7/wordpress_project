@@ -56,6 +56,7 @@ namespace RanorexWordpressLibrary.Common
     				Keyboard.PrepareFocus(control.Element);
             		Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
     			}
+    			Delay.Milliseconds(1000);
             	control.PressKeys(text);
 			}
 		}
