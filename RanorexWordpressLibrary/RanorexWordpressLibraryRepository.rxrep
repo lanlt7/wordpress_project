@@ -131,6 +131,17 @@ name="RanorexWordpressLibraryRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='webtest.ranorex.org']//input[@type='submit' and @name='publish']
 				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="c4d9516e-8c75-4d88-b305-37e27175d30b"
+				name="linkSamplePermalink"
+				refimgid="aef61d63-df1c-4934-924a-88bf131edce6"
+				refpath="/dom[@domain='webtest.ranorex.org']//span[#'sample-permalink']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//span[#'sample-permalink']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//span[#'sample-permalink']
+				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']
 				</basepath>

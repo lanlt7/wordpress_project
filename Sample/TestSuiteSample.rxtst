@@ -22,10 +22,38 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="1b2d07f8-550b-47e9-877f-542b8aba79ff"
+			name="GetPostURL"
+			ref="62c024d3-c25f-4bc0-ba36-beda750050e6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="returnText"
+					datasourceid="6e5da53c-f672-4b28-affb-d57439896c08"
+					variableid="894772d1-ccc7-4707-9d8e-5f4f4dc64fcf"
+					variablename="returnText">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="2ae354f0-c589-4a03-8831-f809d6af5af9"
 			name="setup">
 			</setup>
+			<testmodule
+			id="3a172b76-3f76-4f7c-b7a3-61a859194f19"
+			name="NavigateNewPost"
+			ref="3c9b79b2-2fb9-4a26-89ec-1d19786e9bfa"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="returnText"
+					datasourceid="6e5da53c-f672-4b28-affb-d57439896c08"
+					variableid="a7f0c4c9-698c-4fc9-b063-6a8983b178fb"
+					variablename="returnText">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="6e5b2e12-2add-44f6-977a-6af23fd27e41"
 			name="teardown">
@@ -37,7 +65,7 @@
 				<parameters>
 					<param
 					mask="False"
-					name="NewParameter"
+					name="returnText"
 					value="">
 					</param>
 				</parameters>
@@ -72,12 +100,6 @@
 			id="a98c7752-a231-4cde-9b11-64d38edf951d"
 			name="CloseBrowser"
 			ref="4066f950-2221-402d-b807-7668fe4d404e"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="d4d8d414-93a9-4b3a-9628-7a5185c86b2f"
-			name="geturl"
-			ref="9dc6ccf5-2d29-42b7-8432-fba28dc3409b"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -159,8 +181,12 @@
 						name="CreateNewPost">
 						</testmodule>
 						<testmodule
-						id="d4d8d414-93a9-4b3a-9628-7a5185c86b2f"
-						name="geturl">
+						id="1b2d07f8-550b-47e9-877f-542b8aba79ff"
+						name="GetPostURL">
+						</testmodule>
+						<testmodule
+						id="3a172b76-3f76-4f7c-b7a3-61a859194f19"
+						name="NavigateNewPost">
 						</testmodule>
 						<teardown
 						id="6e5b2e12-2add-44f6-977a-6af23fd27e41"

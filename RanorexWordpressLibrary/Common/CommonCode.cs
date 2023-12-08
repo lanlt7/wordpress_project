@@ -18,6 +18,8 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 
+using Ranorex.Core.Repository;
+
 namespace RanorexWordpressLibrary.Common
 {
     /// <summary>
@@ -32,7 +34,15 @@ namespace RanorexWordpressLibrary.Common
         [UserCodeMethod]
         public static void ReplaceString(string text, string replace)
         {
-        	text.Replace(	
+        	
+        }
+        
+        [UserCodeMethod]
+        public static string Get_value_return_variable(RepoItemInfo spantagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'spantagInfo' and assigning its value to variable 'return_variable'.", spantagInfo);
+            string return_variable = spantagInfo.FindAdapter<SpanTag>().Element.GetAttributeValueText("InnerText");
+            return return_variable;
         }
     }
 }

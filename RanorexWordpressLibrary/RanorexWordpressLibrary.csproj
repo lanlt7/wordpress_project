@@ -174,29 +174,17 @@
       <id>a9b56ebc-b653-4fdd-887a-690936d01b8b</id>
       <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
     </Compile>
-    <Compile Include="Record\CreateNewPost.cs">
-      <BoundTo>5406877d-6254-4107-be10-9dfad5443292</BoundTo>
-      <DependentUpon>CreateNewPost.rxrec</DependentUpon>
+    <Compile Include="Record\GetPostURL.cs">
+      <BoundTo>e5a4f5f5-c08c-4655-910b-d99d8af95649</BoundTo>
+      <DependentUpon>GetPostURL.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>6f753076-1fb5-4669-b22e-f5bcc71ac555</id>
+      <id>9a54548a-1bda-4af6-bd6e-df826b02d057</id>
     </Compile>
-    <Compile Include="Record\CreateNewPost.UserCode.cs">
-      <BoundTo>5406877d-6254-4107-be10-9dfad5443292</BoundTo>
-      <DependentUpon>CreateNewPost.rxrec</DependentUpon>
+    <Compile Include="Record\GetPostURL.UserCode.cs">
+      <BoundTo>e5a4f5f5-c08c-4655-910b-d99d8af95649</BoundTo>
+      <DependentUpon>GetPostURL.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>67f3d96e-7b44-47eb-a675-523275dafffc</id>
-    </Compile>
-    <Compile Include="Record\geturl.cs">
-      <BoundTo>442b8f6b-b915-4480-adac-d050390122f4</BoundTo>
-      <DependentUpon>geturl.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>3731f29c-7813-4422-a29e-a893c5387daf</id>
-    </Compile>
-    <Compile Include="Record\geturl.UserCode.cs">
-      <BoundTo>442b8f6b-b915-4480-adac-d050390122f4</BoundTo>
-      <DependentUpon>geturl.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>911666e8-c6cf-4984-af11-d656a6b5efe1</id>
+      <id>9da21f17-d5aa-42a9-82e1-83f0f56de087</id>
     </Compile>
     <Compile Include="Record\Login.cs">
       <DependentUpon>Login.rxrec</DependentUpon>
@@ -209,6 +197,30 @@
       <UserCode>true</UserCode>
       <id>76cdb5db-3824-45f8-9a77-b50036dfbd81</id>
       <BoundTo>ceff3c19-a6a1-428e-98f6-ed4c167b4401</BoundTo>
+    </Compile>
+    <Compile Include="Record\NavigateNewPost.cs">
+      <BoundTo>eaa635b2-371d-41e2-9096-5027c860fca3</BoundTo>
+      <DependentUpon>NavigateNewPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60213855-d9f9-4a42-8ce6-ef7654277b31</id>
+    </Compile>
+    <Compile Include="Record\NavigateNewPost.UserCode.cs">
+      <BoundTo>eaa635b2-371d-41e2-9096-5027c860fca3</BoundTo>
+      <DependentUpon>NavigateNewPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>446dd375-45e2-441f-b450-005de5267515</id>
+    </Compile>
+    <Compile Include="Record\Post\CreateNewPost.cs">
+      <DependentUpon>CreateNewPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f753076-1fb5-4669-b22e-f5bcc71ac555</id>
+      <BoundTo>5406877d-6254-4107-be10-9dfad5443292</BoundTo>
+    </Compile>
+    <Compile Include="Record\Post\CreateNewPost.UserCode.cs">
+      <DependentUpon>CreateNewPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>67f3d96e-7b44-47eb-a675-523275dafffc</id>
+      <BoundTo>5406877d-6254-4107-be10-9dfad5443292</BoundTo>
     </Compile>
     <Compile Include="Record\Post\FillPost.cs">
       <DependentUpon>FillPost.rxrec</DependentUpon>
@@ -275,20 +287,25 @@
       <id>de823c6d-c0de-48c1-8a61-9a611846e097</id>
       <recordtableid>7ccce584-6f4f-44f1-9597-2de6693bfe0c</recordtableid>
     </None>
-    <None Include="Record\CreateNewPost.rxrec">
+    <None Include="Record\GetPostURL.rxrec">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
-      <id>5406877d-6254-4107-be10-9dfad5443292</id>
-      <recordtableid>43d43b42-1ad6-4102-8d4f-b2374f20ea45</recordtableid>
-    </None>
-    <None Include="Record\geturl.rxrec">
-      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
-      <id>442b8f6b-b915-4480-adac-d050390122f4</id>
-      <recordtableid>9dc6ccf5-2d29-42b7-8432-fba28dc3409b</recordtableid>
+      <id>e5a4f5f5-c08c-4655-910b-d99d8af95649</id>
+      <recordtableid>62c024d3-c25f-4bc0-ba36-beda750050e6</recordtableid>
     </None>
     <None Include="Record\Login.rxrec">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <id>ceff3c19-a6a1-428e-98f6-ed4c167b4401</id>
       <recordtableid>cdac8c09-9e4c-4eb3-8cb4-48e5b74e64c9</recordtableid>
+    </None>
+    <None Include="Record\NavigateNewPost.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>eaa635b2-371d-41e2-9096-5027c860fca3</id>
+      <recordtableid>3c9b79b2-2fb9-4a26-89ec-1d19786e9bfa</recordtableid>
+    </None>
+    <None Include="Record\Post\CreateNewPost.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>5406877d-6254-4107-be10-9dfad5443292</id>
+      <recordtableid>43d43b42-1ad6-4102-8d4f-b2374f20ea45</recordtableid>
     </None>
     <None Include="Record\Post\FillPost.rxrec">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>

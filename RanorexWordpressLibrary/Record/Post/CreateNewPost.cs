@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary.Record
+namespace RanorexWordpressLibrary.Record.Post
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The geturl recording.
+    ///The CreateNewPost recording.
     /// </summary>
-    [TestModule("9dc6ccf5-2d29-42b7-8432-fba28dc3409b", ModuleType.Recording, 1)]
-    public partial class geturl : ITestModule
+    [TestModule("43d43b42-1ad6-4102-8d4f-b2374f20ea45", ModuleType.Recording, 1)]
+    public partial class CreateNewPost : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
         public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static geturl instance = new geturl();
+        static CreateNewPost instance = new CreateNewPost();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public geturl()
+        public CreateNewPost()
         {
+            varTitle = "";
+            varContent = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static geturl Instance
+        public static CreateNewPost Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _varTitle;
+
+        /// <summary>
+        /// Gets or sets the value of variable varTitle.
+        /// </summary>
+        [TestVariable("94f8039e-5bef-45d4-bbf6-289d78e02ba6")]
+        public string varTitle
+        {
+            get { return _varTitle; }
+            set { _varTitle = value; }
+        }
+
+        string _varContent;
+
+        /// <summary>
+        /// Gets or sets the value of variable varContent.
+        /// </summary>
+        [TestVariable("27ed0fb0-0648-43e9-af23-a2a1772de227")]
+        public string varContent
+        {
+            get { return _varContent; }
+            set { _varContent = value; }
+        }
 
 #endregion
 
@@ -79,6 +105,16 @@ namespace RanorexWordpressLibrary.Record
 
             Init();
 
+            Common.MouseClick.Mouse_Click_Left_Side_Menu(repo.ApplicationUnderTest.LeftSideBar.PostsInfo, repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo);
+            Delay.Milliseconds(0);
+            
+            Common.Post.FillPost(varTitle, varContent);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.btnPublish' at Center.", repo.ApplicationUnderTest.Post.btnPublishInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.Post.btnPublish.Click();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

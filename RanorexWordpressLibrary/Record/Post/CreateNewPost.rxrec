@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="CreateNewPost"
-	namespace="RanorexWordpressLibrary.Record">
+	namespace="RanorexWordpressLibrary.Record.Post">
 	</codegen>
 	<variables>
 		<var
@@ -149,7 +149,7 @@ mode="Global">
 	<repository
 	id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
 	name="RanorexWordpressLibraryRepository"
-	relativepath="..\RanorexWordpressLibraryRepository.rxrep">
+	relativepath="..\..\RanorexWordpressLibraryRepository.rxrep">
 		<codegen
 		classname="RanorexWordpressLibraryRepository"
 		namespace="RanorexWordpressLibrary">

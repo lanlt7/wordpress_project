@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace RanorexWordpressLibrary.Record
 {
-    public partial class geturl
+    public partial class NavigateNewPost
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

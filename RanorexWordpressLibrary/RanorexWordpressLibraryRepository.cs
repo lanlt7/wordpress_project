@@ -321,6 +321,7 @@ namespace RanorexWordpressLibrary
             RepoItemInfo _txttitleInfo;
             RepoItemInfo _txtcontentInfo;
             RepoItemInfo _btnpublishInfo;
+            RepoItemInfo _linksamplepermalinkInfo;
 
             /// <summary>
             /// Creates a new Post  folder.
@@ -332,6 +333,7 @@ namespace RanorexWordpressLibrary
                 _txttitleInfo = new RepoItemInfo(this, "txtTitle", ".//input[#'title']", ".//input[#'title']", 30000, null, "a6e53366-8522-4528-9cb5-c22e731fec0c");
                 _txtcontentInfo = new RepoItemInfo(this, "txtContent", ".//textarea[#'content']", ".//textarea[#'content']", 30000, null, "68aa9aa8-f921-4dad-906c-c52e8131441c");
                 _btnpublishInfo = new RepoItemInfo(this, "btnPublish", ".//input[@type='submit' and @name='publish']", ".//input[#'publish']", 30000, null, "461d1826-e1c9-41e2-b2bc-6af888f26c21");
+                _linksamplepermalinkInfo = new RepoItemInfo(this, "linkSamplePermalink", ".//span[#'sample-permalink']", ".//span[#'sample-permalink']", 30000, null, "c4d9516e-8c75-4d88-b305-37e27175d30b");
             }
 
             /// <summary>
@@ -451,6 +453,30 @@ namespace RanorexWordpressLibrary
                 get
                 {
                     return _btnpublishInfo;
+                }
+            }
+
+            /// <summary>
+            /// The linkSamplePermalink item.
+            /// </summary>
+            [RepositoryItem("c4d9516e-8c75-4d88-b305-37e27175d30b")]
+            public virtual Ranorex.SpanTag linkSamplePermalink
+            {
+                get
+                {
+                    return _linksamplepermalinkInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The linkSamplePermalink item info.
+            /// </summary>
+            [RepositoryItemInfo("c4d9516e-8c75-4d88-b305-37e27175d30b")]
+            public virtual RepoItemInfo linkSamplePermalinkInfo
+            {
+                get
+                {
+                    return _linksamplepermalinkInfo;
                 }
             }
         }

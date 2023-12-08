@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RanorexWordpressLibrary.Record
+namespace RanorexWordpressLibrary.Record.Post
 {
     public partial class CreateNewPost
     {

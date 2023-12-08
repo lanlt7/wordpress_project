@@ -24,59 +24,46 @@ namespace RanorexWordpressLibrary.Record
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateNewPost recording.
+    ///The GetPostURL recording.
     /// </summary>
-    [TestModule("43d43b42-1ad6-4102-8d4f-b2374f20ea45", ModuleType.Recording, 1)]
-    public partial class CreateNewPost : ITestModule
+    [TestModule("62c024d3-c25f-4bc0-ba36-beda750050e6", ModuleType.Recording, 1)]
+    public partial class GetPostURL : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
         public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static CreateNewPost instance = new CreateNewPost();
+        static GetPostURL instance = new GetPostURL();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateNewPost()
+        public GetPostURL()
         {
-            varTitle = "";
-            varContent = "";
+            returnText = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateNewPost Instance
+        public static GetPostURL Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _varTitle;
+        string _returnText;
 
         /// <summary>
-        /// Gets or sets the value of variable varTitle.
+        /// Gets or sets the value of variable returnText.
         /// </summary>
-        [TestVariable("94f8039e-5bef-45d4-bbf6-289d78e02ba6")]
-        public string varTitle
+        [TestVariable("894772d1-ccc7-4707-9d8e-5f4f4dc64fcf")]
+        public string returnText
         {
-            get { return _varTitle; }
-            set { _varTitle = value; }
-        }
-
-        string _varContent;
-
-        /// <summary>
-        /// Gets or sets the value of variable varContent.
-        /// </summary>
-        [TestVariable("27ed0fb0-0648-43e9-af23-a2a1772de227")]
-        public string varContent
-        {
-            get { return _varContent; }
-            set { _varContent = value; }
+            get { return _returnText; }
+            set { _returnText = value; }
         }
 
 #endregion
@@ -105,14 +92,7 @@ namespace RanorexWordpressLibrary.Record
 
             Init();
 
-            Common.MouseClick.Mouse_Click_Left_Side_Menu(repo.ApplicationUnderTest.LeftSideBar.PostsInfo, repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo);
-            Delay.Milliseconds(0);
-            
-            Common.Post.FillPost(varTitle, varContent);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.btnPublish' at Center.", repo.ApplicationUnderTest.Post.btnPublishInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.Post.btnPublish.Click();
+            returnText = Common.CommonCode.Get_value_return_variable(repo.ApplicationUnderTest.Post.linkSamplePermalinkInfo);
             Delay.Milliseconds(0);
             
         }
