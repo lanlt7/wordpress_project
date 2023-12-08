@@ -122,6 +122,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="db43b720-c003-4188-9562-8e77b33fc83c"
+			name="VerifyPost"
+			ref="f39d4368-a401-4aa8-aa09-0e034d735468"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="title"
+					datasourceid="ba664145-fc2d-4f3a-b346-3f31d5abf396"
+					variableid="efe8c176-ace1-49f0-9ad7-48f88194b300"
+					variablename="title">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ExportColumnList="None"
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -187,6 +201,10 @@
 						<testmodule
 						id="3a172b76-3f76-4f7c-b7a3-61a859194f19"
 						name="NavigateNewPost">
+						</testmodule>
+						<testmodule
+						id="db43b720-c003-4188-9562-8e77b33fc83c"
+						name="VerifyPost">
 						</testmodule>
 						<teardown
 						id="6e5b2e12-2add-44f6-977a-6af23fd27e41"

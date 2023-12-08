@@ -20,63 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RanorexWordpressLibrary.Record.Post
+namespace RanorexWordpressLibrary.Record
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateNewPost recording.
+    ///The VerifyPost recording.
     /// </summary>
-    [TestModule("43d43b42-1ad6-4102-8d4f-b2374f20ea45", ModuleType.Recording, 1)]
-    public partial class CreateNewPost : ITestModule
+    [TestModule("f39d4368-a401-4aa8-aa09-0e034d735468", ModuleType.Recording, 1)]
+    public partial class VerifyPost : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
         public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static CreateNewPost instance = new CreateNewPost();
+        static VerifyPost instance = new VerifyPost();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateNewPost()
+        public VerifyPost()
         {
-            varTitle = "";
-            varContent = "";
+            title = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateNewPost Instance
+        public static VerifyPost Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _varTitle;
+        string _title;
 
         /// <summary>
-        /// Gets or sets the value of variable varTitle.
+        /// Gets or sets the value of variable title.
         /// </summary>
-        [TestVariable("94f8039e-5bef-45d4-bbf6-289d78e02ba6")]
-        public string varTitle
+        [TestVariable("efe8c176-ace1-49f0-9ad7-48f88194b300")]
+        public string title
         {
-            get { return _varTitle; }
-            set { _varTitle = value; }
-        }
-
-        string _varContent;
-
-        /// <summary>
-        /// Gets or sets the value of variable varContent.
-        /// </summary>
-        [TestVariable("27ed0fb0-0648-43e9-af23-a2a1772de227")]
-        public string varContent
-        {
-            get { return _varContent; }
-            set { _varContent = value; }
+            get { return _title; }
+            set { _title = value; }
         }
 
 #endregion
@@ -105,14 +92,7 @@ namespace RanorexWordpressLibrary.Record.Post
 
             Init();
 
-            Common.MouseClick.Mouse_Click_Left_Side_Menu(repo.ApplicationUnderTest.LeftSideBar.PostsInfo, repo.ApplicationUnderTest.LeftSideBar.contextmenuAddNewInfo);
-            Delay.Milliseconds(0);
-            
-            Common.Post.FillPost(varTitle, varContent);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Post.btnPublish' at Center.", repo.ApplicationUnderTest.Post.btnPublishInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.Post.btnPublish.Click();
+            Common.CommonCode.Verify_Text_Exist(repo.ApplicationUnderTest.SinglePost.lblPagetitleInfo, "InnerText", title);
             Delay.Milliseconds(0);
             
         }

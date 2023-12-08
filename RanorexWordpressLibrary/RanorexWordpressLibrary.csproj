@@ -258,6 +258,18 @@
       <id>678b1b8e-0802-4e57-846b-828c1a378ffa</id>
       <BoundTo>f26c9b22-a274-4dff-a931-3592c6e3e408</BoundTo>
     </Compile>
+    <Compile Include="Record\VerifyPost.cs">
+      <BoundTo>69811f33-ac15-4c8e-a870-5d4dcb9841eb</BoundTo>
+      <DependentUpon>VerifyPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73189dfa-bc04-4e1f-97f8-9b832419f9e3</id>
+    </Compile>
+    <Compile Include="Record\VerifyPost.UserCode.cs">
+      <BoundTo>69811f33-ac15-4c8e-a870-5d4dcb9841eb</BoundTo>
+      <DependentUpon>VerifyPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3bb64f4e-8cfa-4387-b4c3-63d85562cda2</id>
+    </Compile>
     <Compile Include="UserCodeCollection1_Test.cs">
       <id>81d8292a-9789-4c54-9cde-d260a1e84d9c</id>
     </Compile>
@@ -321,6 +333,11 @@
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <id>f26c9b22-a274-4dff-a931-3592c6e3e408</id>
       <recordtableid>5378a50d-e133-44d3-ab37-fb6b73e389e9</recordtableid>
+    </None>
+    <None Include="Record\VerifyPost.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>69811f33-ac15-4c8e-a870-5d4dcb9841eb</id>
+      <recordtableid>f39d4368-a401-4aa8-aa09-0e034d735468</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

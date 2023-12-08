@@ -45,5 +45,13 @@ namespace RanorexWordpressLibrary.Common
             Report.Log(ReportLevel.Info, "Get", string.Format("Get_value_return_variable '{0}'.", return_variable), spantagInfo);
             return return_variable;
         }
+        
+        [UserCodeMethod]
+        public static void Verify_Text_Exist(RepoItemInfo controlInfo, string varType, string varText)
+        {
+        	Report.Log(ReportLevel.Info, "Verify", string.Format("Verify_Text_Exist type '{0}' exist text: {1}.", varType, varText), controlInfo);
+            Validate.AttributeEqual(controlInfo, varType, varText);
+        }
+
     }
 }

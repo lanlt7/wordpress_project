@@ -87,6 +87,7 @@ namespace RanorexWordpressLibrary
         {
             RanorexWordpressLibraryRepositoryFolders.LeftSideBarFolder _leftsidebar;
             RanorexWordpressLibraryRepositoryFolders.PostFolder _post;
+            RanorexWordpressLibraryRepositoryFolders.SinglePostFolder _singlepost;
             RepoItemInfo _userloginInfo;
             RepoItemInfo _userpassInfo;
             RepoItemInfo _wpsubmitInfo;
@@ -99,6 +100,7 @@ namespace RanorexWordpressLibrary
             {
                 _leftsidebar = new RanorexWordpressLibraryRepositoryFolders.LeftSideBarFolder(this);
                 _post = new RanorexWordpressLibraryRepositoryFolders.PostFolder(this);
+                _singlepost = new RanorexWordpressLibraryRepositoryFolders.SinglePostFolder(this);
                 _userloginInfo = new RepoItemInfo(this, "UserLogin", ".//input[#'user_login']", ".//input[#'user_login']", 30000, null, "d2415b1d-8434-4232-b0b4-5e9ab2986712");
                 _userpassInfo = new RepoItemInfo(this, "UserPass", ".//input[#'user_pass']", ".//input[#'user_pass']", 30000, null, "231b4d45-693d-44f4-9a60-c3413eb1effd");
                 _wpsubmitInfo = new RepoItemInfo(this, "WpSubmit", ".//input[#'wp-submit']", ".//input[#'wp-submit']", 30000, null, "2490cfb5-276b-4de9-9000-a704831ca085");
@@ -216,6 +218,15 @@ namespace RanorexWordpressLibrary
             public virtual RanorexWordpressLibraryRepositoryFolders.PostFolder Post
             {
                 get { return _post; }
+            }
+
+            /// <summary>
+            /// The SinglePost folder.
+            /// </summary>
+            [RepositoryFolder("36bdcdf6-f93e-4405-9fc0-68cc65d78973")]
+            public virtual RanorexWordpressLibraryRepositoryFolders.SinglePostFolder SinglePost
+            {
+                get { return _singlepost; }
             }
         }
 
@@ -477,6 +488,98 @@ namespace RanorexWordpressLibrary
                 get
                 {
                     return _linksamplepermalinkInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SinglePostFolder folder.
+        /// </summary>
+        [RepositoryFolder("36bdcdf6-f93e-4405-9fc0-68cc65d78973")]
+        public partial class SinglePostFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _lblpagetitleInfo;
+            RepoItemInfo _lblcontentInfo;
+
+            /// <summary>
+            /// Creates a new SinglePost  folder.
+            /// </summary>
+            public SinglePostFolder(RepoGenBaseFolder parentFolder) :
+                    base("SinglePost", "", parentFolder, 30000, null, false, "36bdcdf6-f93e-4405-9fc0-68cc65d78973", "")
+            {
+                _lblpagetitleInfo = new RepoItemInfo(this, "lblPagetitle", ".//h1[#'pagetitle']", ".//h1[#'pagetitle']", 30000, null, "62517bb8-b603-4303-8417-2847eecf9432");
+                _lblcontentInfo = new RepoItemInfo(this, "lblContent", ".//div[@class='entry']", ".//div[#'Content']//p[@innertext='This is content']", 30000, null, "879ade36-91a3-4efa-b21a-797a6a7b3efd");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("36bdcdf6-f93e-4405-9fc0-68cc65d78973")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("36bdcdf6-f93e-4405-9fc0-68cc65d78973")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lblPagetitle item.
+            /// </summary>
+            [RepositoryItem("62517bb8-b603-4303-8417-2847eecf9432")]
+            public virtual Ranorex.H1Tag lblPagetitle
+            {
+                get
+                {
+                    return _lblpagetitleInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lblPagetitle item info.
+            /// </summary>
+            [RepositoryItemInfo("62517bb8-b603-4303-8417-2847eecf9432")]
+            public virtual RepoItemInfo lblPagetitleInfo
+            {
+                get
+                {
+                    return _lblpagetitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lblContent item.
+            /// </summary>
+            [RepositoryItem("879ade36-91a3-4efa-b21a-797a6a7b3efd")]
+            public virtual Ranorex.DivTag lblContent
+            {
+                get
+                {
+                    return _lblcontentInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lblContent item info.
+            /// </summary>
+            [RepositoryItemInfo("879ade36-91a3-4efa-b21a-797a6a7b3efd")]
+            public virtual RepoItemInfo lblContentInfo
+            {
+                get
+                {
+                    return _lblcontentInfo;
                 }
             }
         }

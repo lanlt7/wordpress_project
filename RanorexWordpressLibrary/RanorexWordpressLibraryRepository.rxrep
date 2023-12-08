@@ -18,6 +18,7 @@ name="RanorexWordpressLibraryRepository">
 		id="8ca35afe-5cc1-48cc-9960-5dfc3a45bd5e"
 		isrooted="True"
 		name="ApplicationUnderTest"
+		refimgid="29c53257-02f6-4870-89b5-c9fc0b5fcedd"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -141,6 +142,38 @@ name="RanorexWordpressLibraryRepository">
 				robustPath="/dom[@domain='webtest.ranorex.org']//span[#'sample-permalink']"
 				searchtimeout="30000ms">
 					/dom[@domain='webtest.ranorex.org']//span[#'sample-permalink']
+				</item>
+				<basepath>
+					/dom[@domain='webtest.ranorex.org']
+				</basepath>
+			</folder>
+			<folder
+			capname="webdocument"
+			id="36bdcdf6-f93e-4405-9fc0-68cc65d78973"
+			isrooted="True"
+			name="SinglePost"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="62517bb8-b603-4303-8417-2847eecf9432"
+				name="lblPagetitle"
+				refimgid="76196c2f-b27f-4def-ae24-ab07eff27ded"
+				refpath="/dom[@domain='webtest.ranorex.org']//h1[#'pagetitle']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//h1[#'pagetitle']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//h1[#'pagetitle']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="divtag"
+				id="879ade36-91a3-4efa-b21a-797a6a7b3efd"
+				name="lblContent"
+				refimgid="7b1c7c6f-d465-406c-8631-09865248b0b2"
+				robustPath="/dom[@domain='webtest.ranorex.org']//div[#'Content']//p[@innertext='This is content']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//div[@class='entry']
 				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']
