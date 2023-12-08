@@ -67,7 +67,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						InnerText
+						Text
 					</argvalue>
 				</argument>
 				<argument

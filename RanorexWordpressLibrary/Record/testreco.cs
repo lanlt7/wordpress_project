@@ -24,46 +24,46 @@ namespace RanorexWordpressLibrary.Record
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The VerifyPost recording.
+    ///The testreco recording.
     /// </summary>
-    [TestModule("f39d4368-a401-4aa8-aa09-0e034d735468", ModuleType.Recording, 1)]
-    public partial class VerifyPost : ITestModule
+    [TestModule("76bd5830-a9ac-4483-a9ff-945d327929e6", ModuleType.Recording, 1)]
+    public partial class testreco : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repository.
         /// </summary>
         public static global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository repo = global::RanorexWordpressLibrary.RanorexWordpressLibraryRepository.Instance;
 
-        static VerifyPost instance = new VerifyPost();
+        static testreco instance = new testreco();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerifyPost()
+        public testreco()
         {
-            title = "";
+            default_type = "InnerText";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static VerifyPost Instance
+        public static testreco Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _title;
+        string _default_type;
 
         /// <summary>
-        /// Gets or sets the value of variable title.
+        /// Gets or sets the value of variable default_type.
         /// </summary>
-        [TestVariable("efe8c176-ace1-49f0-9ad7-48f88194b300")]
-        public string title
+        [TestVariable("169220a7-7ea6-4cbb-9a45-464851a3c99e")]
+        public string default_type
         {
-            get { return _title; }
-            set { _title = value; }
+            get { return _default_type; }
+            set { _default_type = value; }
         }
 
 #endregion
@@ -92,7 +92,8 @@ namespace RanorexWordpressLibrary.Record
 
             Init();
 
-            Common.CommonCode.Verify_Text_Exist(repo.ApplicationUnderTest.SinglePost.lblPagetitleInfo, "Text", title);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourtext') on item 'ApplicationUnderTest.SinglePost.lblPagetitle'.", repo.ApplicationUnderTest.SinglePost.lblPagetitleInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.SinglePost.lblPagetitleInfo, "Text", "yourtext");
             Delay.Milliseconds(0);
             
         }
