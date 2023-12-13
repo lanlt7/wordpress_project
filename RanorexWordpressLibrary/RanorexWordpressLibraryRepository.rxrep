@@ -165,6 +165,17 @@ name="RanorexWordpressLibraryRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='webtest.ranorex.org']//a[#'post-preview']
 				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="780b553f-e85c-4ace-bada-132c53997d47"
+				name="QtContentClose"
+				refimgid="14ef103f-ff08-4378-b630-f3b6840035f0"
+				refpath="/dom[@domain='webtest.ranorex.org']//input[#'qt_content_close']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//input[#'qt_content_close']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//input[#'qt_content_close']
+				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']
 				</basepath>

@@ -73,12 +73,6 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
-			id="91a9639d-870c-491b-8c33-ae295f1ae048"
-			name="DragAddMediaToContent"
-			ref="a0617a7c-5154-4b01-a6a1-8fdf563d6a7c"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="b99e99e0-89cc-412c-9c98-6730873edb22"
 			name="VerifyCompare2Value"
 			ref="c96a2ee8-0702-4e51-a795-22b9b5ff3ef9"
@@ -175,10 +169,6 @@
 						<testmodule
 						id="d77d166f-4b76-425e-a05f-f278e796123d"
 						name="SelectLeftSideMenu">
-						</testmodule>
-						<testmodule
-						id="91a9639d-870c-491b-8c33-ae295f1ae048"
-						name="DragAddMediaToContent">
 						</testmodule>
 					</testcase>
 				</testcase>

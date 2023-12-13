@@ -186,6 +186,18 @@
       <id>a9b56ebc-b653-4fdd-887a-690936d01b8b</id>
       <BoundTo>de823c6d-c0de-48c1-8a61-9a611846e097</BoundTo>
     </Compile>
+    <Compile Include="Record\DragAndVerify2.cs">
+      <BoundTo>ee70f907-bcaa-4356-aa3f-5cb6f5f68dea</BoundTo>
+      <DependentUpon>DragAndVerify2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9820fa3e-ed5d-436a-b158-777ac0872704</id>
+    </Compile>
+    <Compile Include="Record\DragAndVerify2.UserCode.cs">
+      <BoundTo>ee70f907-bcaa-4356-aa3f-5cb6f5f68dea</BoundTo>
+      <DependentUpon>DragAndVerify2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>62b85601-10fc-4523-b392-d2eccf13c760</id>
+    </Compile>
     <Compile Include="Record\GetPostURL.cs">
       <BoundTo>e5a4f5f5-c08c-4655-910b-d99d8af95649</BoundTo>
       <DependentUpon>GetPostURL.rxrec</DependentUpon>
@@ -380,6 +392,11 @@
       <id>de823c6d-c0de-48c1-8a61-9a611846e097</id>
       <recordtableid>7ccce584-6f4f-44f1-9597-2de6693bfe0c</recordtableid>
     </None>
+    <None Include="Record\DragAndVerify2.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>ee70f907-bcaa-4356-aa3f-5cb6f5f68dea</id>
+      <recordtableid>bcfe8d6e-a694-4d75-8d53-cf26768aa43e</recordtableid>
+    </None>
     <None Include="Record\GetPostURL.rxrec">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <id>e5a4f5f5-c08c-4655-910b-d99d8af95649</id>
@@ -452,6 +469,9 @@
     </Folder>
     <Folder Include="Common\CodeLibrary">
       <id>64104eb7-2980-4d0c-be34-1631ee4e0648</id>
+    </Folder>
+    <Folder Include="Sample">
+      <id>1ffc28b4-1af3-4bc6-a1bc-9bb77aacaa31</id>
     </Folder>
     <Folder Include="Record\Menu">
       <id>7a8b7c17-ddd1-4e48-a713-124c7f472029</id>

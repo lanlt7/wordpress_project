@@ -41,6 +41,15 @@ namespace RanorexWordpressLibrary.Common
         }
         
         [UserCodeMethod]
+        public static string Get_value_return_variable(RepoItemInfo repo, string varType)
+        {
+//	        Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'spantagInfo' and assigning its value to variable 'return_variable'.", spantagInfo);
+        	string return_variable = repo.FindAdapter<Unknown>().Element.GetAttributeValueText(varType);
+            Report.Log(ReportLevel.Info, "Get", string.Format("Get_value_return_variable '{0}'.", return_variable), repo);
+            return return_variable;
+        }
+         
+        [UserCodeMethod]
         public static void Verify_Text_Exist(RepoItemInfo repo, string varType, string varText)
         {
         	if(string.IsNullOrEmpty(varType))

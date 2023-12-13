@@ -3,30 +3,25 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="276e0ae6-f2f7-429f-baad-e9732aa29331"
-			name="VerifyCompare2Value"
-			ref="c96a2ee8-0702-4e51-a795-22b9b5ff3ef9"
+			enabled="False"
+			id="407d7336-826e-48c8-ac57-14b0fe8fa8bc"
+			name="DragAndVerify"
+			ref="6cc1b330-58ce-4920-9392-0aaeaeb36b2c"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="varString1"
+					dataname="varTextLink"
 					datasourceid="45bcdf0f-d534-4be0-a834-938fce2297b8"
-					variableid="c450e95d-e41f-4b3f-8692-e331d2d85d65"
-					variablename="varString1">
+					variableid="15b4e25a-9561-4314-9176-50d915b4e8f3"
+					variablename="varTextLink">
 					</var>
 					<var
-					dataname="varString2"
+					dataname="varTextReturn"
 					datasourceid="45bcdf0f-d534-4be0-a834-938fce2297b8"
-					variableid="0043180c-e6f1-4887-a0fd-4a0c932256e9"
-					variablename="varString2">
+					variableid="594caf1f-8fbd-41de-975b-d433b4f84db0"
+					variablename="varTextReturn">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="3d0a0c6c-9bbb-4760-8b93-f59922dd857c"
-			name="DragAndDropZZZ"
-			ref="67cc44fe-6ca5-4bde-afda-5d40aed75b9f"
-			type="Recording">
 			</testmodule>
 			<testsuite
 			ExportColumnList="None"
@@ -66,13 +61,13 @@
 				<parameters>
 					<param
 					mask="False"
-					name="varString1"
-					value="aa">
+					name="varTextLink"
+					value="close tags">
 					</param>
 					<param
 					mask="False"
-					name="varString2"
-					value="aa">
+					name="varTextReturn"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -90,6 +85,28 @@
 			name="SelectLeftSideMenu"
 			ref="65b41f02-77fe-47db-b1f1-76694f5fde3e"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a4fba015-0494-4ec7-804a-46364e1a7db7"
+			name="DragAndVerify2"
+			ref="bcfe8d6e-a694-4d75-8d53-cf26768aa43e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="varTextLink"
+					datasourceid="45bcdf0f-d534-4be0-a834-938fce2297b8"
+					variableid="671106a6-fdd7-4caa-b97f-6fdd31c8b8bb"
+					variablename="varTextLink">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="varTextLink"
+					datasourceid="45bcdf0f-d534-4be0-a834-938fce2297b8"
+					variableid="4dd16d3a-44f2-453b-9cee-49b4492e7147"
+					variablename="varTextLink">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="c75bb9d7-0a71-4d79-8eef-c1508e9a652c"
@@ -169,16 +186,16 @@
 						name="Login">
 						</testmodule>
 						<testmodule
-						id="276e0ae6-f2f7-429f-baad-e9732aa29331"
-						name="VerifyCompare2Value">
-						</testmodule>
-						<testmodule
 						id="9784b32c-02eb-41a4-8a79-45e95863b0a9"
 						name="SelectLeftSideMenu">
 						</testmodule>
 						<testmodule
-						id="3d0a0c6c-9bbb-4760-8b93-f59922dd857c"
-						name="DragAndDropZZZ">
+						id="407d7336-826e-48c8-ac57-14b0fe8fa8bc"
+						name="DragAndVerify">
+						</testmodule>
+						<testmodule
+						id="a4fba015-0494-4ec7-804a-46364e1a7db7"
+						name="DragAndVerify2">
 						</testmodule>
 					</testcase>
 				</testcase>
