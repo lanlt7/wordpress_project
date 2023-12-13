@@ -47,7 +47,7 @@ mode="Global">
 			<arguments
 			id="02b2a152-dd1b-4072-87ac-d26e963a807d">
 				<argument
-				argname="spantagInfo"
+				argname="repo"
 				id="f4b8804c-0470-4845-9b3b-4f8e14dfdf74">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral

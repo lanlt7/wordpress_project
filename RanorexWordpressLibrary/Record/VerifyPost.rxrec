@@ -47,7 +47,7 @@ mode="Global">
 			<arguments
 			id="49dbe24a-753e-471f-af2e-68f29497692d">
 				<argument
-				argname="controlInfo"
+				argname="repo"
 				id="1922107f-8683-41a2-97f8-0cc1e1e45746">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
@@ -101,7 +101,7 @@ mode="Global">
 			<arguments
 			id="49dbe24a-753e-471f-af2e-68f29497692d">
 				<argument
-				argname="controlInfo"
+				argname="repo"
 				id="1922107f-8683-41a2-97f8-0cc1e1e45746">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral

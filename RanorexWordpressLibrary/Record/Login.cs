@@ -111,8 +111,8 @@ namespace RanorexWordpressLibrary.Record
             Common.Textbox.InputText(repo.ApplicationUnderTest.UserPassInfo, varPassword);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.WpSubmit' at 31;15.", repo.ApplicationUnderTest.WpSubmitInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.WpSubmit.Click("31;15");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.WpSubmit' at Center.", repo.ApplicationUnderTest.WpSubmitInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.WpSubmit.Click();
             Delay.Milliseconds(0);
             
         }

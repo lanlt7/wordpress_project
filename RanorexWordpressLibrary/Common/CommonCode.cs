@@ -30,32 +30,25 @@ namespace RanorexWordpressLibrary.Common
     {
         // You can use the "Insert New User Code Method" functionality from the context menu,
         // to add a new method with the attribute [UserCodeMethod].
-         
+
         [UserCodeMethod]
-        public static void ReplaceString(string text, string replace)
-        {
-        	
-        }
-        
-        [UserCodeMethod]
-        public static string Get_value_return_variable(RepoItemInfo spantagInfo)
+        public static string Get_value_return_variable(RepoItemInfo repo)
         {
 //	        Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'spantagInfo' and assigning its value to variable 'return_variable'.", spantagInfo);
-            string return_variable = spantagInfo.FindAdapter<SpanTag>().Element.GetAttributeValueText("InnerText");
-            Report.Log(ReportLevel.Info, "Get", string.Format("Get_value_return_variable '{0}'.", return_variable), spantagInfo);
+            string return_variable = repo.FindAdapter<Unknown>().Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get", string.Format("Get_value_return_variable '{0}'.", return_variable), repo);
             return return_variable;
         }
         
         [UserCodeMethod]
-        public static void Verify_Text_Exist(RepoItemInfo controlInfo, string varType, string varText)
+        public static void Verify_Text_Exist(RepoItemInfo repo, string varType, string varText)
         {
         	if(string.IsNullOrEmpty(varType))
         	{
         		varType = "InnerText";
         	}
-        	Report.Log(ReportLevel.Info, "Validation", string.Format("Verify_Text_Exist type '{0}' exist text: {1}.", varType, varText), controlInfo);
-            Validate.AttributeEqual(controlInfo, varType, varText);
+        	Report.Log(ReportLevel.Info, "Validation", string.Format("Verify_Text_Exist type '{0}' exist text: {1}.", varType, varText), repo);
+            Validate.AttributeEqual(repo, varType, varText);
         }
-
     }
 }
