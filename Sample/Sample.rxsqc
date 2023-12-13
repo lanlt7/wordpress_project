@@ -1,12 +1,22 @@
 [
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "TestSuiteSample",
     "RunConfig": "TestRun"
   },
   {
     "Enabled": "False",
     "TestSuite": "Sample",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "TestCode",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "TestCode2",
     "RunConfig": "TestRun"
   }
 ]

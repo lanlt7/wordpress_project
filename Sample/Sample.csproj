@@ -161,6 +161,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TestCode.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>646694c6-2471-4dd7-be86-6ebc640f7ef1</id>
+    </Content>
+    <Content Include="TestCode2.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>99dffe17-c2ea-477d-a8af-4c798808df39</id>
+    </Content>
     <Content Include="TestSuiteSample.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>643d70d6-cb97-4d2b-8d2a-5bcc149af76b</id>

@@ -103,5 +103,8 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex.ReportToPDF.exe
+		</reference>
 	</references>
 </testsuitedoc>

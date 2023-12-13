@@ -143,6 +143,28 @@ name="RanorexWordpressLibraryRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='webtest.ranorex.org']//span[#'sample-permalink']
 				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="ae19f4fa-7654-457b-b456-05411b3d49d1"
+				name="InsertMediaButton"
+				refimgid="5f9bb290-8bd8-4b6d-8995-2dfba673047f"
+				refpath="/dom[@domain='webtest.ranorex.org']//a[#'insert-media-button']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//a[#'insert-media-button']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//a[#'insert-media-button']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="6e0b9b18-64e0-4f22-a9ac-35118c60c086"
+				name="PostPreview"
+				refimgid="f4e26410-cd97-44fe-be77-8ef5bfedcd74"
+				refpath="/dom[@domain='webtest.ranorex.org']//a[#'post-preview']"
+				robustPath="/dom[@domain='webtest.ranorex.org']//a[#'post-preview']"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//a[#'post-preview']
+				</item>
 				<basepath>
 					/dom[@domain='webtest.ranorex.org']
 				</basepath>

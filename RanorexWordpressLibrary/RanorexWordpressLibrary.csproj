@@ -107,6 +107,9 @@
     <Reference Include="Ranorex.Plugin.Wpf.Core">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Ranorex.ReportToPDF">
+      <HintPath>..\packages\Ranorex.ReportToPDF.1.0.16\lib\net40\Ranorex.ReportToPDF.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -140,6 +143,15 @@
     </Compile>
     <Compile Include="Common\WebDriverExtension.cs">
       <id>3a9f945f-c563-46c0-ae6e-6eba8d3bfb70</id>
+    </Compile>
+    <Compile Include="Modules\CollectRetryErrorMessagesModule.cs">
+      <id>10bc07d3-cd7f-4c0e-a915-e1b0c84d91fa</id>
+    </Compile>
+    <Compile Include="Modules\EmailModule.cs">
+      <id>6056485a-269d-483f-b63a-8d0d771136af</id>
+    </Compile>
+    <Compile Include="Modules\ReportToPDFModule.cs">
+      <id>1f64b1a9-82ef-4526-b705-1cb0225f2a57</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>45af0839-2493-4e69-891d-2a874de08f91</id>
@@ -197,6 +209,18 @@
       <UserCode>true</UserCode>
       <id>76cdb5db-3824-45f8-9a77-b50036dfbd81</id>
       <BoundTo>ceff3c19-a6a1-428e-98f6-ed4c167b4401</BoundTo>
+    </Compile>
+    <Compile Include="Record\Menu\SelectLeftSideMenu.cs">
+      <BoundTo>d97894bb-5b4c-4c74-9371-c97d39298ef1</BoundTo>
+      <DependentUpon>SelectLeftSideMenu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d2d6398-7706-4014-8226-18f7ca716d88</id>
+    </Compile>
+    <Compile Include="Record\Menu\SelectLeftSideMenu.UserCode.cs">
+      <BoundTo>d97894bb-5b4c-4c74-9371-c97d39298ef1</BoundTo>
+      <DependentUpon>SelectLeftSideMenu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>38929c6f-70f5-4989-b95b-3af0144cdada</id>
     </Compile>
     <Compile Include="Record\NavigateNewPost.cs">
       <BoundTo>eaa635b2-371d-41e2-9096-5027c860fca3</BoundTo>
@@ -282,13 +306,58 @@
       <UserCode>true</UserCode>
       <id>3bb64f4e-8cfa-4387-b4c3-63d85562cda2</id>
     </Compile>
+    <Compile Include="Record\Verify\VerifyCompare2Value.cs">
+      <BoundTo>b7297098-a941-481a-abbf-dfed5399a2d4</BoundTo>
+      <DependentUpon>VerifyCompare2Value.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5b087caf-6c83-4611-90d7-7c0030b066bb</id>
+    </Compile>
+    <Compile Include="Record\Verify\VerifyCompare2Value.UserCode.cs">
+      <BoundTo>b7297098-a941-481a-abbf-dfed5399a2d4</BoundTo>
+      <DependentUpon>VerifyCompare2Value.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f9d32c6-e74a-4013-a563-b82755629fbd</id>
+    </Compile>
     <Compile Include="UserCodeCollection1_Test.cs">
       <id>81d8292a-9789-4c54-9cde-d260a1e84d9c</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\DragNDropLibrary.cs">
+      <id>167036e8-f517-46bb-b024-ea92e0944d9a</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\EmailLibrary.cs">
+      <id>97212360-68ca-4feb-9dab-11391abc389d</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\ExceptionExtensions.cs">
+      <id>6aea187e-cbab-4034-b593-9231773b4bcc</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\FileLibrary.cs">
+      <id>f322300a-ed44-467a-8ffe-e2b6ce404f58</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
+      <id>fc503ff4-8b92-40bb-87f5-745c1f616dc9</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\StringLibrary.cs">
+      <id>c7a062a0-711e-4506-96f5-75ca9b20efa3</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\SystemLibrary.cs">
+      <id>9f7760f3-8765-4e0c-aa3f-28d9a4c22a2f</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\Utils.cs">
+      <id>2836fec8-68a5-411e-9a06-b01a534ec4c3</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\ValidationLibrary.cs">
+      <id>89b07837-4dcb-40cb-9c40-d98dc65fea41</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\WebLibrary.cs">
+      <id>6158f95c-8eed-4de2-a7ce-8008494392a3</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <id>51657543-159a-4f47-ac23-d2b27a5a45d4</id>
+    </None>
+    <None Include="packages.config">
+      <id>62c33aa2-6b7e-44f2-b3b0-2876b405bf5d</id>
     </None>
     <None Include="RanorexWordpressLibraryRepository.rximg">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
@@ -320,6 +389,11 @@
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <id>ceff3c19-a6a1-428e-98f6-ed4c167b4401</id>
       <recordtableid>cdac8c09-9e4c-4eb3-8cb4-48e5b74e64c9</recordtableid>
+    </None>
+    <None Include="Record\Menu\SelectLeftSideMenu.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>d97894bb-5b4c-4c74-9371-c97d39298ef1</id>
+      <recordtableid>65b41f02-77fe-47db-b1f1-76694f5fde3e</recordtableid>
     </None>
     <None Include="Record\NavigateNewPost.rxrec">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
@@ -356,6 +430,11 @@
       <id>69811f33-ac15-4c8e-a870-5d4dcb9841eb</id>
       <recordtableid>f39d4368-a401-4aa8-aa09-0e034d735468</recordtableid>
     </None>
+    <None Include="Record\Verify\VerifyCompare2Value.rxrec">
+      <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
+      <id>b7297098-a941-481a-abbf-dfed5399a2d4</id>
+      <recordtableid>c96a2ee8-0702-4e51-a795-22b9b5ff3ef9</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="RanorexWordpressLibrary.rxtmg">
@@ -373,6 +452,18 @@
     </Folder>
     <Folder Include="Common\CodeLibrary">
       <id>64104eb7-2980-4d0c-be34-1631ee4e0648</id>
+    </Folder>
+    <Folder Include="Record\Menu">
+      <id>7a8b7c17-ddd1-4e48-a713-124c7f472029</id>
+    </Folder>
+    <Folder Include="Record\ActionMouse">
+      <id>8eb964ce-d33d-46c4-922e-ea6b71db8ff1</id>
+    </Folder>
+    <Folder Include="Record\Verify">
+      <id>3dae4a21-4418-4472-a86a-4fe32178e507</id>
+    </Folder>
+    <Folder Include="zTemp">
+      <id>0a7c2879-8f1c-4071-abdf-bef540907442</id>
     </Folder>
     <Folder Include="Record">
       <id>5128fae4-d91e-4425-ad99-dd8d4814c9cf</id>

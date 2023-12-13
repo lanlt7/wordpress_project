@@ -333,6 +333,8 @@ namespace RanorexWordpressLibrary
             RepoItemInfo _txtcontentInfo;
             RepoItemInfo _btnpublishInfo;
             RepoItemInfo _linksamplepermalinkInfo;
+            RepoItemInfo _insertmediabuttonInfo;
+            RepoItemInfo _postpreviewInfo;
 
             /// <summary>
             /// Creates a new Post  folder.
@@ -345,6 +347,8 @@ namespace RanorexWordpressLibrary
                 _txtcontentInfo = new RepoItemInfo(this, "txtContent", ".//textarea[#'content']", ".//textarea[#'content']", 30000, null, "68aa9aa8-f921-4dad-906c-c52e8131441c");
                 _btnpublishInfo = new RepoItemInfo(this, "btnPublish", ".//input[@type='submit' and @name='publish']", ".//input[#'publish']", 30000, null, "461d1826-e1c9-41e2-b2bc-6af888f26c21");
                 _linksamplepermalinkInfo = new RepoItemInfo(this, "linkSamplePermalink", ".//span[#'sample-permalink']", ".//span[#'sample-permalink']", 30000, null, "c4d9516e-8c75-4d88-b305-37e27175d30b");
+                _insertmediabuttonInfo = new RepoItemInfo(this, "InsertMediaButton", ".//a[#'insert-media-button']", ".//a[#'insert-media-button']", 30000, null, "ae19f4fa-7654-457b-b456-05411b3d49d1");
+                _postpreviewInfo = new RepoItemInfo(this, "PostPreview", ".//a[#'post-preview']", ".//a[#'post-preview']", 30000, null, "6e0b9b18-64e0-4f22-a9ac-35118c60c086");
             }
 
             /// <summary>
@@ -488,6 +492,54 @@ namespace RanorexWordpressLibrary
                 get
                 {
                     return _linksamplepermalinkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The InsertMediaButton item.
+            /// </summary>
+            [RepositoryItem("ae19f4fa-7654-457b-b456-05411b3d49d1")]
+            public virtual Ranorex.ATag InsertMediaButton
+            {
+                get
+                {
+                    return _insertmediabuttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The InsertMediaButton item info.
+            /// </summary>
+            [RepositoryItemInfo("ae19f4fa-7654-457b-b456-05411b3d49d1")]
+            public virtual RepoItemInfo InsertMediaButtonInfo
+            {
+                get
+                {
+                    return _insertmediabuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PostPreview item.
+            /// </summary>
+            [RepositoryItem("6e0b9b18-64e0-4f22-a9ac-35118c60c086")]
+            public virtual Ranorex.ATag PostPreview
+            {
+                get
+                {
+                    return _postpreviewInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PostPreview item info.
+            /// </summary>
+            [RepositoryItemInfo("6e0b9b18-64e0-4f22-a9ac-35118c60c086")]
+            public virtual RepoItemInfo PostPreviewInfo
+            {
+                get
+                {
+                    return _postpreviewInfo;
                 }
             }
         }

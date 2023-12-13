@@ -40,9 +40,9 @@ namespace RanorexWordpressLibrary.Common
         public static void Mouse_Click_Left_Side_Menu(RepoItemInfo leftMenu, RepoItemInfo contextLeftMenu )
         {
             Report.Log(ReportLevel.Info, "Mouse", string.Format("Mouse Left Click item '{0}' at Center.", leftMenu), leftMenu);
-            leftMenu.FindAdapter<DivTag>().Click();
+            leftMenu.FindAdapter<Unknown>().Click();
             Report.Log(ReportLevel.Info, "Mouse", string.Format("Mouse Left Click item '{0}' at Center.", contextLeftMenu), contextLeftMenu);
-            contextLeftMenu.FindAdapter<ATag>().Click();
+            contextLeftMenu.FindAdapter<Unknown>().Click();
         }
     }
 }
