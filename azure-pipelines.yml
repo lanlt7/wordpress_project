@@ -20,7 +20,4 @@ steps:
   displayName: 'Run a multi-line script'
 - task: CmdLine@2
   inputs:
-    script: |
-      echo Write your commands here
-      
-      echo Hello world
+    script: '$(System.DefaultWorkingDirectory)\Sample\bin\Debug\Sample.exe'
