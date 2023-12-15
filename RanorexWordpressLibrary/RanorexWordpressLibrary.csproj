@@ -470,6 +470,9 @@
     <Folder Include="Common\CodeLibrary">
       <id>64104eb7-2980-4d0c-be34-1631ee4e0648</id>
     </Folder>
+    <Folder Include="Azure">
+      <id>dd00653e-9416-409d-860a-7abd5a538149</id>
+    </Folder>
     <Folder Include="Sample">
       <id>1ffc28b4-1af3-4bc6-a1bc-9bb77aacaa31</id>
     </Folder>
