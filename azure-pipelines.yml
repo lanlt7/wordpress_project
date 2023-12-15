@@ -20,4 +20,4 @@ steps:
   displayName: 'Run a multi-line script'
 - task: CmdLine@2
   inputs:
-    script: '"C:\Users\lan.tuan.le\Documents\Ranorex\RanorexStudio Projects\WordpressProject\Sample\bin\Debug\Sample.exe"'
+    script: '"C:\Users\lan.tuan.le\Documents\Ranorex\RanorexStudio Projects\WordpressProject\wordpress_project\Sample\bin\Debug\Sample.exe"'
