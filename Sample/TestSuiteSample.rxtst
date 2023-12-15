@@ -96,6 +96,7 @@
 			reportlevel="Info;20">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="a98c7752-a231-4cde-9b11-64d38edf951d"
 			name="CloseBrowser"
 			ref="4066f950-2221-402d-b807-7668fe4d404e"
