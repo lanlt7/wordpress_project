@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{6C6650ED-00E7-454E-8AF0-9B646946A742}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Sample</RootNamespace>
+    <AssemblyName>Sample</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>b527a1a2-df78-4650-8439-0d68c5c7c6c9</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4d77a593-3983-4bd2-b20f-ac7c4e3e453a</id>
+    </Compile>
+    <Compile Include="DragAndVerify.cs">
+      <DependentUpon>DragAndVerify.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19ce7fee-c00c-4e7a-8b19-e55a993e792a</id>
+      <BoundTo>d555cd75-25f9-4029-8d95-1538aa1c8cfa</BoundTo>
+    </Compile>
+    <Compile Include="DragAndVerify.UserCode.cs">
+      <DependentUpon>DragAndVerify.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>90005613-f73f-4973-94b4-5d0e4ebb38f1</id>
+      <BoundTo>d555cd75-25f9-4029-8d95-1538aa1c8cfa</BoundTo>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>6c87a85b-a154-467c-ae0d-a12df3631288</id>
+    </Compile>
+    <Compile Include="RanorexWordpressLibraryRepository.cs">
+      <DependentUpon>RanorexWordpressLibraryRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>565c8752-2b5a-421d-8ad1-fc241d0fe133</id>
+      <BoundTo>69b14cc0-40fb-421a-a85b-c158f49a7e06</BoundTo>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>2f4dc84a-93d4-4e8f-82c4-099eeb5af74c</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03d0587f-73c0-4448-aec1-c43dfc65fadc</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>2f4dc84a-93d4-4e8f-82c4-099eeb5af74c</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b5537146-bbd8-4198-80cf-2af27e1dbf70</id>
+    </Compile>
+    <Compile Include="Recording2.cs">
+      <BoundTo>576f59b3-caa7-4b85-aea2-ee00eebb907f</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53cb83f6-109d-4382-8907-8ea17521b2c3</id>
+    </Compile>
+    <Compile Include="Recording2.UserCode.cs">
+      <BoundTo>576f59b3-caa7-4b85-aea2-ee00eebb907f</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc992a32-ca26-44fd-815a-2e851d27f12a</id>
+    </Compile>
+    <Compile Include="SampleRepository.cs">
+      <BoundTo>b527a1a2-df78-4650-8439-0d68c5c7c6c9</BoundTo>
+      <DependentUpon>SampleRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>bea2ad66-a5d0-434a-8b87-772d8eaeb64b</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestCode.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>646694c6-2471-4dd7-be86-6ebc640f7ef1</id>
+    </Content>
+    <Content Include="TestCode2.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>99dffe17-c2ea-477d-a8af-4c798808df39</id>
+    </Content>
+    <Content Include="TestSuiteSample.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>643d70d6-cb97-4d2b-8d2a-5bcc149af76b</id>
+    </Content>
+    <None Include="..\RanorexWordpressLibrary\RanorexWordpressLibraryRepository.rximg">
+      <DependentUpon>RanorexWordpressLibraryRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>39e71a90-b4a8-4d2a-a561-34f8ccd8b1f7</id>
+      <Link>RanorexWordpressLibraryRepository.rximg</Link>
+      <BoundTo>69b14cc0-40fb-421a-a85b-c158f49a7e06</BoundTo>
+    </None>
+    <None Include="..\RanorexWordpressLibrary\RanorexWordpressLibraryRepository.rxrep">
+      <id>69b14cc0-40fb-421a-a85b-c158f49a7e06</id>
+      <repoid>7d26d7be-3b31-4650-a6f7-74688f90bd34</repoid>
+      <reporootid>78cdb3e0-f1ee-4349-aaba-d9e99da4313e</reporootid>
+      <Link>RanorexWordpressLibraryRepository.rxrep</Link>
+    </None>
+    <None Include="app.config">
+      <id>e3e5fa1e-d2dd-4b7e-a43c-8797e5dfc0c3</id>
+    </None>
+    <None Include="DragAndVerify.rxrec">
+      <BoundTo>69b14cc0-40fb-421a-a85b-c158f49a7e06</BoundTo>
+      <id>d555cd75-25f9-4029-8d95-1538aa1c8cfa</id>
+      <recordtableid>6cc1b330-58ce-4920-9392-0aaeaeb36b2c</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>b527a1a2-df78-4650-8439-0d68c5c7c6c9</BoundTo>
+      <id>2f4dc84a-93d4-4e8f-82c4-099eeb5af74c</id>
+      <recordtableid>755e0029-3933-4a55-b0d3-c7ab2b952264</recordtableid>
+    </None>
+    <Content Include="Sample.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c06030ac-1e2f-424c-95d8-164b35f54896</id>
+    </Content>
+    <None Include="Recording2.rxrec">
+      <BoundTo>b527a1a2-df78-4650-8439-0d68c5c7c6c9</BoundTo>
+      <id>576f59b3-caa7-4b85-aea2-ee00eebb907f</id>
+      <recordtableid>60c6607c-c7bf-4997-a4c9-3323b78817d9</recordtableid>
+    </None>
+    <None Include="SampleRepository.rximg">
+      <BoundTo>b527a1a2-df78-4650-8439-0d68c5c7c6c9</BoundTo>
+      <DependentUpon>SampleRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8ccc12e5-c493-4964-9148-3922d397f8a7</id>
+    </None>
+    <None Include="SampleRepository.rxrep">
+      <id>b527a1a2-df78-4650-8439-0d68c5c7c6c9</id>
+      <repoid>81044055-ba0c-47f1-b390-4beda31505b8</repoid>
+      <reporootid>92b579ec-2c85-4811-9a12-f6f3c4b315f9</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sample.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>7904f61e-8028-48cd-8a43-7755aeb9ca1c</id>
+    </Content>
+    <Content Include="Sample.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d24f0f80-1846-4287-96b5-b2f00b102626</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexWordpressLibrary\RanorexWordpressLibrary.csproj">
+      <Project>{954B0473-F62D-4C12-A5D0-D34397CF34F7}</Project>
+      <Name>RanorexWordpressLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

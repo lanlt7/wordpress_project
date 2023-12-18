@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cdac8c09-9e4c-4eb3-8cb4-48e5b74e64c9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Login"
+	namespace="RanorexWordpressLibrary.Record">
+	</codegen>
+	<variables>
+		<var
+		id="752f91b7-09e3-44bc-af78-96b7c8f7c43b"
+		name="varUsername">
+		</var>
+		<var
+		id="a0abd0ab-cf27-430e-9a4b-982f719abf62"
+		name="varPassword">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Textbox"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="InputText"
+		namespace="RanorexWordpressLibrary.Common"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7b12fd71-b44a-49b2-b4f2-e93a49e6e3ad">
+				<argument
+				argname="inputText"
+				id="f80caa57-7c1e-4230-99db-87ee7a504cec">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="d2415b1d-8434-4232-b0b4-5e9ab2986712"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='webtest.ranorex.org']//input[#'user_login']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="text"
+				id="f2b8e1a2-404c-461e-a2b3-355b80b5fe64"
+				variable="varUsername">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Textbox"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="InputText"
+		namespace="RanorexWordpressLibrary.Common"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="3824d907-5d9b-4270-900a-03e01f9dee60">
+				<argument
+				argname="inputText"
+				id="f515868c-130c-4908-b764-780f9fc0caf8">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="231b4d45-693d-44f4-9a60-c3413eb1effd"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='webtest.ranorex.org']//input[#'user_pass']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="text"
+				id="b8c1c686-c049-4f6e-a430-e0af8fcdff22"
+				variable="varPassword">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						varPassword
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f0082a28-edff-4865-b7b1-1bcdc16c8364"
+		sx="740"
+		sy="546"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2490cfb5-276b-4de9-9000-a704831ca085"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="709,531,63,30"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						button button-primary button-large
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						wp-submit
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						button button-large button-primary
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						Log In
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						wp-submit
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						Log In
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="c04a54bb-b95e-49df-9c69-832191247161">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAEaAVQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoKKKc
+oBXJoAbRT9o9KNo9KAGUU/aPSjaPSgBlFP2j0o2j0oAZRT9o9KNo9KAGUU/aPSjaPSgBlFP2j0o2
+j0oAZRT9o9KNo9KAGUU/aPSjaPSgBlFP2j0o2j0oAZRT9o9KNo9KAGUU/aPSjaPSgBlFP2j0o2j0
+oAZRT9o9KNo9KAGUU/aPSjaPSgBlFP2j0o2j0oAZRT9o9KNo9KAGUU/aPSjaPSgBlFP2j0o2j0oA
+ZRT9o9KNo9KAGUU/aPSmn7xFACUUUUAFPT7oplPT7ooAWiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAph+8af
+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
+6fdFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFAHPxWN9HF5Zs43Gc5Z+f0YelO+x3n/PhF/wB/D/8AFVvUVKTSsmzaVVSd5QV/Qwfsd5/z4Rf9
+/D/8VSC3voJluFslwgIdFbdvU9RyTzx2rfop692Tzx6QRBZeQbSM2oAhOSoHbJzVXWN0pt4IoxLI
+XL7CcDAUjJ5GOoqZrBfPeWGeaAvyyxkbSfXBB5p9tZRW7tIC8kzDDSSHLEent+FMhbmT9jvP+fCL
+/v4f/iqPsd5/z4Rf9/D/APFVvUUve7svnh/IvuMi2trw6jBNNbpEkalfkIwBg+59a16KKErBOfPb
+S1gph+8afTD940zMSiiigAp6fdFMp6fdFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFMP3jT6YfvGgBKKK
+KACnp90Uynp90UALRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUw/eNPph+8aAEooooAKQqDS0UAJtFG0UtFA
+CbRRtFLRQAm0UbRS0UAJtFG0UtFACbRRtFLRQAm0UbRS0UAJtFG0UtFACbRRtFLRQAm0UbRS0UAJ
+tFG0UtFACbRRtFLRQAm0UbRS0UAJtFG0UtFACbRRtFLRQAm0UbRS0UAJtFG0UtFACbRRtFLRQAm0
+UbRS0UAJtFG0UtFACbRSgYoooAKKKKAP/9k=
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
+	name="RanorexWordpressLibraryRepository"
+	relativepath="..\RanorexWordpressLibraryRepository.rxrep">
+		<codegen
+		classname="RanorexWordpressLibraryRepository"
+		namespace="RanorexWordpressLibrary">
+		</codegen>
+		<rootfolder
+		id="78cdb3e0-f1ee-4349-aaba-d9e99da4313e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Login.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

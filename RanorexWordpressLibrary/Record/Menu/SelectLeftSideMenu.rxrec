@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="65b41f02-77fe-47db-b1f1-76694f5fde3e"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectLeftSideMenu"
+	namespace="RanorexWordpressLibrary.Record.Menu">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="MouseClick"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Mouse_Click_Left_Side_Menu"
+		namespace="RanorexWordpressLibrary.Common"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="fc6f000b-2372-47f6-b05d-1ec4acc4702e">
+				<argument
+				argname="leftMenu"
+				id="f062715d-57f5-45ac-a0e8-0d8debfbdc39">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="755005be-9dec-4c99-9e90-134ace2f8ee0"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//div[@innertext='Posts']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="contextLeftMenu"
+				id="5117f3f3-8d00-48bc-b572-b5adf9da4c05">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="fa819b3f-baff-42d9-a1c4-b5f68a6bb379"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//li[@class='wp-first-item current']/..//a[@innertext='Add New']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7d26d7be-3b31-4650-a6f7-74688f90bd34"
+	name="RanorexWordpressLibraryRepository"
+	relativepath="..\..\RanorexWordpressLibraryRepository.rxrep">
+		<codegen
+		classname="RanorexWordpressLibraryRepository"
+		namespace="RanorexWordpressLibrary">
+		</codegen>
+		<rootfolder
+		id="78cdb3e0-f1ee-4349-aaba-d9e99da4313e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectLeftSideMenu.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

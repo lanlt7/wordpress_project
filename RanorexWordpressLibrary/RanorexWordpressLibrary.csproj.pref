@@ -1,0 +1,41 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="temp.txt" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="temp.txt" />
+    <Element value="UserCodeCollections\WebLibrary.cs" />
+    <Element value="UserCodeCollections\Utils.cs" />
+    <Element value="UserCodeCollections\SystemLibrary.cs" />
+    <Element value="UserCodeCollections\DragNDropLibrary.cs" />
+    <Element value="UserCodeCollections\EmailLibrary.cs" />
+    <Element value="UserCodeCollections\ExceptionExtensions.cs" />
+    <Element value="UserCodeCollections\FileLibrary.cs" />
+    <Element value="UserCodeCollections\PopupWatcherLibrary.cs" />
+    <Element value="UserCodeCollections\StringLibrary.cs" />
+    <Element value="UserCodeCollections\ValidationLibrary.cs" />
+    <Element value="UserCodeCollection1_Test.cs" />
+    <Element value="TestSuiteTemp.rxtst" />
+    <Element value="RanorexWordpressLibraryRepository.rxrep" />
+    <Element value="RanorexWordpressLibrary.rxtmg" />
+    <Element value="AssemblyInfo.cs" />
+    <Element value="app.config" />
+    <Element value="Common\WebDriverExtension.cs" />
+    <Element value="Common\CodeLibrary\Textbox.cs" />
+    <Element value="Record\Login.rxrec" />
+    <Element value="RanorexWordpressLibrary.rxsqc" />
+    <Element value="RanorexWordpressLibrary.rxtst" />
+    <Element value="Modules\EmailModule.cs" />
+    <Element value="Modules\ReportToPDFModule.cs" />
+    <Element value="Modules\CollectRetryErrorMessagesModule.cs" />
+    <Element value="Record\Post\CreateNewPost.rxrec" />
+    <Element value="Record\AddNewPost.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>
