@@ -207,7 +207,7 @@
     <None Include="app.config">
       <id>e3e5fa1e-d2dd-4b7e-a43c-8797e5dfc0c3</id>
     </None>
-    <None Include="build.txt">
+    <None Include="buildzz.txt">
       <id>edb6e09d-ed93-4639-885b-f0dd54243b41</id>
     </None>
     <None Include="DragAndVerify.rxrec">
