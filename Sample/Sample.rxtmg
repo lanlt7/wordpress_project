@@ -15,10 +15,40 @@ rxversion="10.7">
 			ref="755e0029-3933-4a55-b0d3-c7ab2b952264"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="24937d1d-6e6d-4098-9b6d-92dcc818c10d"
+			name="ModuleGroup4">
+			</modulegroupdef>
 			<modulegroups
 			id="37945c8f-dcc9-4589-9c41-0adf2ce0f42a"
 			name="Sample">
 			</modulegroups>
+			<modulegroupdef
+			id="51919a88-e523-48f5-8953-8ab6ea1156b7"
+			name="ModuleGroup2">
+			</modulegroupdef>
+			<modulegroupdef
+			id="5368a73e-64a7-43a0-a78c-a25af3c7a365"
+			name="ModuleGroup5">
+			</modulegroupdef>
+			<modulegroupdef
+			id="6a37af3c-f51c-4d12-be8c-06b8e36f48cf"
+			name="ModuleGroup3">
+			</modulegroupdef>
+			<testmodule
+			id="79ad4bd9-f0f6-47d3-bb3f-f92a157de73e"
+			name="Recording2"
+			ref="60c6607c-c7bf-4997-a4c9-3323b78817d9"
+			type="Recording">
+			</testmodule>
+			<simplefolder
+			id="7ef95079-ef52-4606-94a4-8dabc2571731"
+			name="NewFolder">
+			</simplefolder>
+			<modulegroupdef
+			id="92fd12d5-3e76-43e8-a976-9b0f713bfd8a"
+			name="ModuleGroup6">
+			</modulegroupdef>
 			<modulegroupdef
 			id="bda76a6d-1a3b-4875-a158-abac40ef0de5"
 			name="ModuleGroup">
@@ -27,27 +57,63 @@ rxversion="10.7">
 			id="c1684248-69b6-4dd6-9f93-05805d2c05a6"
 			name="ModuleGroup1">
 			</modulegroupdef>
+			<simplefolder
+			id="d5e2c617-18b0-4f88-a010-d6c339b018dd"
+			name="Mouse">
+			</simplefolder>
 		</flatlistofchildren>
 		<childhierarchy>
 			<modulegroups
 			id="37945c8f-dcc9-4589-9c41-0adf2ce0f42a"
 			name="Sample">
-				<modulegroupdef
-				id="bda76a6d-1a3b-4875-a158-abac40ef0de5"
-				name="ModuleGroup">
-					<testmodule
-					id="1d39fdac-24d6-40cc-94b8-193b011cecfe"
-					name="Recording1">
-					</testmodule>
-					<testmodule
-					id="0f467321-230a-4499-afe8-38a5882fd13d"
-					name="Recording2">
-					</testmodule>
-				</modulegroupdef>
-				<modulegroupdef
-				id="c1684248-69b6-4dd6-9f93-05805d2c05a6"
-				name="ModuleGroup1">
-				</modulegroupdef>
+				<simplefolder
+				id="d5e2c617-18b0-4f88-a010-d6c339b018dd"
+				name="Mouse">
+					<modulegroupdef
+					id="bda76a6d-1a3b-4875-a158-abac40ef0de5"
+					name="ModuleGroup">
+						<testmodule
+						id="1d39fdac-24d6-40cc-94b8-193b011cecfe"
+						name="Recording1">
+						</testmodule>
+						<testmodule
+						id="0f467321-230a-4499-afe8-38a5882fd13d"
+						name="Recording2">
+						</testmodule>
+					</modulegroupdef>
+					<modulegroupdef
+					id="c1684248-69b6-4dd6-9f93-05805d2c05a6"
+					name="ModuleGroup1">
+						<simplefolder
+						id="7ef95079-ef52-4606-94a4-8dabc2571731"
+						name="NewFolder">
+						</simplefolder>
+					</modulegroupdef>
+					<modulegroupdef
+					id="51919a88-e523-48f5-8953-8ab6ea1156b7"
+					name="ModuleGroup2">
+						<testmodule
+						id="79ad4bd9-f0f6-47d3-bb3f-f92a157de73e"
+						name="Recording2">
+						</testmodule>
+					</modulegroupdef>
+					<modulegroupdef
+					id="6a37af3c-f51c-4d12-be8c-06b8e36f48cf"
+					name="ModuleGroup3">
+					</modulegroupdef>
+					<modulegroupdef
+					id="24937d1d-6e6d-4098-9b6d-92dcc818c10d"
+					name="ModuleGroup4">
+					</modulegroupdef>
+					<modulegroupdef
+					id="5368a73e-64a7-43a0-a78c-a25af3c7a365"
+					name="ModuleGroup5">
+					</modulegroupdef>
+					<modulegroupdef
+					id="92fd12d5-3e76-43e8-a976-9b0f713bfd8a"
+					name="ModuleGroup6">
+					</modulegroupdef>
+				</simplefolder>
 			</modulegroups>
 		</childhierarchy>
 	</testsuiteentryhierarchy>

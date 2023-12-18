@@ -365,12 +365,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TestSuiteTemp.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>08241471-0111-4b6a-9f76-ac5c4bab05c4</id>
+    </Content>
     <None Include="app.config">
       <id>51657543-159a-4f47-ac23-d2b27a5a45d4</id>
     </None>
     <None Include="packages.config">
       <id>62c33aa2-6b7e-44f2-b3b0-2876b405bf5d</id>
     </None>
+    <Content Include="RanorexWordpressLibrary.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>953c34cb-3284-43ab-bbd2-205ccee57e2f</id>
+    </Content>
     <None Include="RanorexWordpressLibraryRepository.rximg">
       <BoundTo>b0275bdc-07ae-42ce-9a16-ad3cc7f0bca3</BoundTo>
       <DependentUpon>RanorexWordpressLibraryRepository.rxrep</DependentUpon>
@@ -470,23 +478,11 @@
     <Folder Include="Common\CodeLibrary">
       <id>64104eb7-2980-4d0c-be34-1631ee4e0648</id>
     </Folder>
-    <Folder Include="Azure">
-      <id>dd00653e-9416-409d-860a-7abd5a538149</id>
-    </Folder>
-    <Folder Include="Sample">
-      <id>1ffc28b4-1af3-4bc6-a1bc-9bb77aacaa31</id>
-    </Folder>
     <Folder Include="Record\Menu">
       <id>7a8b7c17-ddd1-4e48-a713-124c7f472029</id>
     </Folder>
-    <Folder Include="Record\ActionMouse">
-      <id>8eb964ce-d33d-46c4-922e-ea6b71db8ff1</id>
-    </Folder>
     <Folder Include="Record\Verify">
       <id>3dae4a21-4418-4472-a86a-4fe32178e507</id>
-    </Folder>
-    <Folder Include="zTemp">
-      <id>0a7c2879-8f1c-4071-abdf-bef540907442</id>
     </Folder>
     <Folder Include="Record">
       <id>5128fae4-d91e-4425-ad99-dd8d4814c9cf</id>

@@ -109,14 +109,6 @@
 					variablename="varTextLink">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="varTextLink"
-					datasourceid="45bcdf0f-d534-4be0-a834-938fce2297b8"
-					variableid="4dd16d3a-44f2-453b-9cee-49b4492e7147"
-					variablename="varTextLink">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="c75bb9d7-0a71-4d79-8eef-c1508e9a652c"
