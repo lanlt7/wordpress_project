@@ -207,9 +207,6 @@
     <None Include="app.config">
       <id>e3e5fa1e-d2dd-4b7e-a43c-8797e5dfc0c3</id>
     </None>
-    <None Include="buildzz.txt">
-      <id>edb6e09d-ed93-4639-885b-f0dd54243b41</id>
-    </None>
     <None Include="DragAndVerify.rxrec">
       <BoundTo>69b14cc0-40fb-421a-a85b-c158f49a7e06</BoundTo>
       <id>d555cd75-25f9-4029-8d95-1538aa1c8cfa</id>
