@@ -1,0 +1,18 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{954B0473-F62D-4C12-A5D0-D34397CF34F7}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>343f7b45-cdfb-45ec-a108-ac283c4ac77d</string>
+      <string>cdf21c32-4356-477a-9c5d-b72aae9ef8e1</string>
+      <string>{6C6650ED-00E7-454E-8AF0-9B646946A742}</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution RanorexWordpressLibrary[RanorexWordpressLibrary[]Sample[]]]&#xD;&#xA;Solution RanorexWordpressLibrary&#xD;&#xA;Solution RanorexWordpressLibrary" />
+  <StartupProject value="{6C6650ED-00E7-454E-8AF0-9B646946A742}" />
+</Properties>
