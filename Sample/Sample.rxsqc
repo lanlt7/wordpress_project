@@ -15,7 +15,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "False",
+    "Enabled": "True",
     "TestSuite": "TestCode2",
     "RunConfig": "TestRun"
   }
