@@ -2,7 +2,6 @@
   <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="RanorexWordpressLibrary\RanorexWordpressLibraryRepository.rxrep" />
     <Element value="Sample.rxtmg" />
     <Element value="TestCode2.rxtst" />
     <Element value="TestSuiteSample.rxtst" />
@@ -14,6 +13,7 @@
     <Element value="SampleRepository.rxrep" />
     <Element value="Recording1.rxrec" />
     <Element value="DragAndVerify.rxrec" />
+    <Element value="RanorexWordpressLibrary\RanorexWordpressLibraryRepository.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

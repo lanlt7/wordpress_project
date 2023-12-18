@@ -13,6 +13,6 @@
       <string>{6C6650ED-00E7-454E-8AF0-9B646946A742}</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution RanorexWordpressLibrary[RanorexWordpressLibrary[]Sample[]]]&#xD;&#xA;Solution RanorexWordpressLibrary&#xD;&#xA;Solution RanorexWordpressLibrary" />
+  <ProjectBrowserState value="[Solution RanorexWordpressLibrary[Sample[]]]&#xD;&#xA;Solution RanorexWordpressLibrary&#xD;&#xA;Solution RanorexWordpressLibrary\Sample\References" />
   <StartupProject value="{6C6650ED-00E7-454E-8AF0-9B646946A742}" />
 </Properties>
