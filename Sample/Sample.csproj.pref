@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="TestSuiteSample.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="TestSuiteSample.rxtst" />
+    <Element value="Sample.rxtst" />
+    <Element value="TestCode.rxtst" />
+    <Element value="TestCode2.rxtst" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+  </Properties>
+</Properties>

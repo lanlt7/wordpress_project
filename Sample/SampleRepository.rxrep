@@ -1,0 +1,20 @@
+﻿<repository
+id="81044055-ba0c-47f1-b390-4beda31505b8"
+name="SampleRepository">
+	<codegen
+	classname="SampleRepository"
+	namespace="Sample">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="92b579ec-2c85-4811-9a12-f6f3c4b315f9"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
