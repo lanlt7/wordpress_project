@@ -460,6 +460,9 @@
       <id>b7297098-a941-481a-abbf-dfed5399a2d4</id>
       <recordtableid>c96a2ee8-0702-4e51-a795-22b9b5ff3ef9</recordtableid>
     </None>
+    <None Include="temp.txt">
+      <id>33e68b36-02fa-4491-92cc-cdbbcfd86fe5</id>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="RanorexWordpressLibrary.rxtmg">
